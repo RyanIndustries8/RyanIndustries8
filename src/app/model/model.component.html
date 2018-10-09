@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="mainBlock">
+  <a class="return" [routerLink]="['/work']"><div class="arrow"></div> Back</a>
+  <div class="columnFlex" *ngFor="let model of projects">
+    <h1 class="modelName">{{ model.label }}<p>{{ model.sublabel }} - <a target="_blank" href={{model.url}}>{{ model.link }}</a></p></h1>
+    <div class="modelImagery">
+      <img *ngFor="let subpic of model['img']" src={{subpic.render}} />
+    </div>
+    <div class="modelInfo">
+
+      <p class="modelName">{{ model.about }}</p>
+      <p>Responsive:</p><p>{{ model.responsive }}</p>
+      <p>Tools:</p><p>{{ model.tools }}</p>
+      <p>Libraries:</p><p>{{ model.library }}</p>
+    </div>
+  </div>
+</div>

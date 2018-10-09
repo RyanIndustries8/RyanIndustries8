@@ -1,0 +1,1849 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* PAGE TEXT FORMATTING */
+
+/* global */
+BODY {
+	min-width: 380px;
+	font-size: 10pt;
+	color: #333333;
+	font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+
+img {
+	border: 0px;
+}
+
+a {
+	color: #3361B8;
+	text-decoration: none;
+}
+
+td {
+	margin-top: 5px;
+}
+
+a:hover {
+	color: #3361B8;
+	text-decoration: underline;
+}
+
+.pageTitle {
+	font-size: 22px;
+}
+
+.fieldLabel {
+	font-weight: bold;
+}
+
+.headerContainer {
+	height: 68px;
+	border: 0px;
+}
+
+.headerBar {
+	background-color: #808080;
+	height: 10px;
+	border: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	clear: both;
+}
+
+.footerBar {
+	background-color: #808080;
+	height: 10px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border: 0px;
+	clear: both;
+}
+
+header {
+	font-size: 9pt;
+	color: #333333;
+	line-height: 1em;
+	vertical-align: bottom;
+}
+
+/* Banner Footer */
+footer {
+	font-size: 9pt;
+	color: #333333;
+}
+
+.header_link {
+	float: right;
+	margin-top: 25px;
+	vertical-align: bottom;
+}
+
+@media ( max-width :767px) {
+	.header_link {
+		float: right;
+		margin-top: 10px;
+		vertical-align: bottom;
+	}
+}
+
+.header_title {
+	text-align: center;
+	margin-top: 25px;
+	vertical-align: bottom;
+	font-size: 22pt;
+	color: #000000;
+}
+
+H4, legend {
+	font-size: 20px;
+	color: #000000;
+}
+
+H3 {
+	margin-bottom: 0;
+	margin-top: 0px;
+	margin-left: 0;
+	font-weight: bold;
+}
+
+H2 {
+	font-weight: bold;
+	text-align: left;
+	color: #FFFFFF;
+	background-color: #808080;
+	padding: 5px 5px 5px 5px;
+}
+
+H1 {
+	font-size: 22px;
+	color: #000000;
+}
+
+input, select, option {
+	margin-right: 10px;
+	height: auto;
+	vertical-align: middle;
+}
+
+select[multiple], select[size] {
+	height: 24px;
+}
+
+input[type=text] {
+	height: 24px;
+}
+
+input[type=password] {
+	height: 24px;
+}
+
+input[type=radio] {
+	vertical-align: middle;
+	padding: 0px 0px 1px 5px;
+	margin: 0px 5px 1px 15px;
+}
+
+/* Banner Header */
+.infoBlock {
+	font-size: 0.7em;
+	font-weight: normal;
+	text-align: left;
+	padding: 0px;
+	color: #24618E;
+}
+
+.category {
+	font-weight: bold;
+	color: #21374C;
+}
+
+.menu {
+	display: table;
+	padding: 0;
+	list-style-type: none;
+	white-space: nowrap; /* keep text on one line */;
+	border: 0px solid #F7F7F7;
+}
+
+* html .menu {
+	display: inline-block;
+	width: 1px; /* IE will expand to fit menu width */
+	padding-left: 0;
+	margin-left: 10px;
+	margin-right: 0px;
+	margin-top: 15px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+	padding-right: 0px;
+	margin-bottom: 0px;
+}
+
+.menu li {
+	display: table-cell;
+}
+
+* html .menu li {
+	display: inline;
+}
+
+.menu a:visited {
+	display: block;
+	padding: 1px 6px;
+	border: 0px solid;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.menu a {
+	display: block;
+	border: 0px solid;
+	padding-left: 0;
+	margin-left: 10px;
+	margin-right: 0px;
+	margin-top: 8px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	margin-bottom: 2px;
+	text-decoration: none;
+}
+
+* html .menu a:visited {
+	display: inline-block;
+	margin: 0 -2px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+* html .menu a {
+	display: inline-block;
+	margin: 0 -2px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	background: #ffb502;
+}
+
+.menu a:visited {
+	color: #FFFFFF;
+}
+
+.menu-top {
+	font-size: xx-small;
+	font-weight: bold;
+	letter-spacing: normal;
+	margin-bottom: 0px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 0px;
+	max-height: 12px;
+	padding: 3px;
+	padding-bottom: 2px;
+	padding-left: 3px;
+	padding-right: 10px;
+	padding-top: 44px;
+	color: #FFFFFF;
+	white-space: nowrap;
+	float: right;
+}
+
+.menu-top a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.menu-top a:visited {
+	color: #FFFFFF;
+}
+
+#tabmenu ul {
+	padding-left: 0px;
+	padding-top: 0px;
+	text-align: left;
+	padding-right: 0px;
+	padding-bottom: 4px;
+	margin: 5px;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+#tabmenu ul li {
+	list-style: none;
+	display: inline;
+}
+
+#tabmenu ul li a {
+	padding: 0px 0.5em;
+	text-decoration: none;
+	float: left;
+	color: #000000;
+	font-size: 12px;
+	font-weight: bold;
+	border: 1px solid #e5e7ff;
+}
+
+#tabmenu ul li a:hover {
+	color: #990033;
+	border-right: #666699 1px outset;
+	border-top: #666699 1px outset;
+	border-left: #666699 1px outset;
+	border-bottom: #666699 1px outset;
+}
+
+#tabmenu li a.current {
+	color: #990033;
+	border-right: #9999cc 1px solid;
+	border-top: #9999cc 1px solid;
+	border-left: #9999cc 1px solid;
+	border-bottom: #9999cc 1px solid;
+}
+
+.td_topbar {
+	background-image: url(../../../../../logins/idprov/images/header-bk.jpg);
+	color: #000000;
+	background-color: #d7eaef;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #A9C0C7;
+	padding: 0px;
+}
+
+.td_topbar2 {
+	background-image: url(../../../../../logins/idprov/images/background/bg-main-3.jpg);
+	color: #000000;
+	background-repeat: repeat-x;
+	border-bottom: 1px solid #A9C0C7;
+	padding: 0px;
+}
+
+.td_banner {
+	background-image: url('../../../../../logins/idprov/images/banner-4a.jpg');
+	background-color: #b41500;
+	height: 60px;
+	background-repeat: no-repeat;
+	width: 800px;
+}
+
+.td_banner-l {
+	background-image: url('../../../../../logins/idprov/images/banner-4-left.jpg');
+	background-color: #b41500;
+	height: 60px;
+	background-repeat: no-repeat;
+	width: 612px;
+}
+
+.td_banner-m {
+	background-image: url('../../../../../logins/idprov/images/background/ban-mid.jpg');
+	background-color: #b41500;
+	height: 60px;
+	background-repeat: repeat;
+}
+
+.td_banner-r {
+	background-image: url('../../../../../logins/idprov/images/banner-4-right.jpg');
+	background-color: #b41500;
+	height: 60px;
+	background-repeat: no-repeat;
+	width: 226px;
+}
+
+/* Top Table Info */
+.top-table-td {
+	background-image: url(../../../../../logins/idprov/images/background/bg-table-top.jpg);
+	background-repeat: repeat-x;
+	height: 10px;
+}
+
+#top-table {
+	background-color: #EEEEEE;
+}
+
+#moduleBox {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	text-align: left;
+	height: 100%;
+	background-color: #FFFFFF;
+	font-size: 0.9em;
+	border: #8795A2 1px solid;
+	line-height: 2em;
+}
+
+#moduleBox-sub {
+	padding: 5px 5px 5px 5px;
+	text-align: left;
+	height: 100%;
+	background-color: #EEEEEE;
+	font-size: 0.9em;
+	border: #FFFFFF 0px;
+}
+
+.main_td {
+	margin: 0;
+	padding: 5px 5px 5px 5px;
+}
+
+.help {
+	padding-right: 10px;
+}
+
+/* Main Body Formatting */
+.contentSection {
+	background-color: #FFFFFF;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #D5D5D5;
+	margin-top: 20px;
+	padding: 1px;
+}
+
+.sectionHeader {
+	font-weight: bold;
+	text-align: left;
+	color: #FFFFFF;
+	background-color: #808080;
+	padding: 5px 5px 5px 5px;
+}
+
+.sectionHeaderNoBackground {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px 5px 5px 5px;
+	font-size: 15pt;
+	font-family: Arial;
+}
+
+.sectionPanel {
+	margin: 10px 10px 10px 10px;
+}
+
+.sectionHeaderGray {
+	font-weight: bold;
+	text-align: left;
+	color: #cf1013;
+	background-color: #CCCCCC;
+	border-top: 1px solid #8D8D8D;
+	border-bottom: 0px;
+	padding: 0px 5px 5px 5px;
+}
+
+.sectionHeaderNutral {
+	font-weight: bold;
+	text-align: left;
+	color: #333333;
+	background-color: #D5D5D5;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 10px;
+}
+
+.groupHeader {
+	font-weight: bold;
+	text-align: left;
+	color: #333333;
+	padding-left: 20px;
+	line-height: 10pt;
+}
+
+.groupHeaderBar {
+	background-color: #D5D5D5;
+	height: 1px;
+	border: 0px;
+	line-height: 3px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+	clear: both;
+}
+
+.portalSectionHeader {
+	font-size: 10pt;
+	text-align: left;
+	color: #000000;
+	background-color: #F2F2F2;
+	padding: 2px 2px 2px 2px;
+}
+
+.
+.portalColL {
+	float: top;
+	text-align: top;
+	vertical-align: text-top;
+	width: 50%;
+	padding: 2px 7px 2px 2px;
+}
+
+.portalColR {
+	float: top;
+	text-align: top;
+	vertical-align: text-top;
+	width: 50%;
+	padding: 2px 2px 2px 7px;
+}
+
+.fieldLabel-center-col {
+	font-weight: bold;
+	font-size: 100%;
+	width: 50%;
+	text-align: right;
+	padding: 10px 0 0 0;
+}
+
+.fieldContent-center-col {
+	font-weight: normal;
+	font-size: 100%;
+	width: 50%;
+	text-align: left;
+	padding: 10px 5px 0 5px;
+}
+
+.fieldLabel-4-col {
+	font-weight: normal;
+	font-size: 100%;
+	width: 50%;
+	text-align: right;
+	padding: 10px 0 0 0;
+}
+
+.fieldContent-4col {
+	font-weight: normal;
+	font-size: 100%;
+	width: 60%;
+	vertical-align: top;
+	text-align: left;
+	padding: 10px 5px 0 5px;
+}
+
+.fieldLabel-4col {
+	font-weight: bold;
+	font-size: 100%;
+	width: 40%;
+	vertical-align: top;
+	text-align: right;
+	padding: 10px 5px 10px 5px;
+}
+
+.fieldLabel-3col {
+	font-weight: bold;
+	font-size: 100%;
+	width: 25%;
+	vertical-align: middle;
+	text-align: right;
+	padding: 10px 5px 10px 5px;
+}
+
+.fieldContent-3col {
+	n font-weight: normal;
+	font-size: 100%;
+	width: 15%;
+	vertical-align: middle;
+	text-align: left;
+	padding: 10px 5px 10px 5px;
+}
+
+.fieldComments-3col {
+	font-weight: normal;
+	font-size: 100%;
+	width: 65%;
+	vertical-align: middle;
+	text-align: left;
+	padding: 10px 5px 10px 5px;
+}
+
+.fieldLabel-col {
+	font-weight: normal;
+	color: rgb(103, 103, 103);
+	width: 30%;
+	text-align: right;
+	padding: 10px 0 0 0;
+	vertical-align: middle;
+}
+
+.fieldContent-col {
+	font-weight: normal;
+	width: 20%;
+	text-align: left;
+	padding: 10px 5px 0 5px;
+}
+
+.fieldLabel-6col {
+	font-weight: normal;
+	font-size: 100%;
+	color: rgb(103, 103, 103);
+	width: 20%;
+	text-align: right;
+	padding: 10px 0 0 0;
+}
+
+.fieldContent-6col {
+	font-weight: normal;
+	font-size: 100%;
+	width: 13%;
+	text-align: left;
+	padding: 10px 5px 0 5px;
+}
+
+.alignMiddle {
+	text-align: center;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+.pgroupAlignRight {
+	display: block;
+	text-align: right;
+}
+
+.pgroupAlignLeft {
+	display: block;
+	text-align: left;
+}
+
+.scrollerCell {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.pgroupAlignMiddle {
+	display: block;
+	text-align: center;
+}
+
+.field-center {
+	font-weight: normal;
+	width: 100%;
+	color: #000000;
+	text-align: center;
+	vertical-align: top;
+	padding: 10px 0 0 0;
+}
+
+.field-2col {
+	font-weight: normal;
+	font-size: 100%;
+	width: 50%;
+	text-align: center;
+	vertical-align: top;
+	padding: 10px 0 0 0;
+}
+
+.fieldLabel-table {
+	font-weight: bold;
+	width: 10%;
+	text-align: right;
+	vertical-align: top;
+	padding: 10px 0 0 0;
+}
+
+.fieldContent-table {
+	font-weight: normal;
+	width: 100%;
+	text-align: left;
+	padding: 10px 5px 0 5px;
+}
+
+.fieldLabel-2col {
+	font-weight: bold;
+	font-size: 100%;
+	width: 25%;
+	text-align: right;
+	vertical-align: top;
+	padding: 10px 5px 10px 5px;
+}
+
+.fieldContent-2col {
+	font-weight: normal;
+	font-size: 100%;
+	width: 75%;
+	text-align: left;
+	padding: 10px 5px 0 5px;
+}
+
+.tableRowBootstrap {
+	padding: 5px;
+	line-height: 2em;
+}
+
+.fieldLabelBootstrap {
+	font-weight: bold;
+	font-size: 100%;
+	text-align: right;
+}
+
+.field-1col {
+	font-size: 100%;
+	width: 100%;
+	text-align: right;
+	vertical-align: top;
+	padding: 10px 5px 0px 5px;
+}
+
+.fieldContentBootstrap {
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+}
+
+@media ( max-width :767px) {
+	.fieldLabelBootstrap {
+		font-weight: bold;
+		font-size: 100%;
+		text-align: left;
+	}
+}
+
+.submitButtonBig {
+	color: #000000;
+	border-right: dimgray 1px ridge;
+	border-top: dimgray 1px ridge;
+	border-left: dimgray 1px ridge;
+	border-bottom: dimgray 1px ridge;
+	background-image: url(../../../../../logins/idprov/images/background/button-blu-lite2.gif);
+	font-weight: bold;
+	width: 110px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.submitButtonVBig {
+	color: #000000;
+	border-right: dimgray 1px ridge;
+	border-top: dimgray 1px ridge;
+	border-left: dimgray 1px ridge;
+	border-bottom: dimgray 1px ridge;
+	background-image: url(../../../../../logins/idprov/images/background/button-blu-lite-140px.gif);
+	font-weight: bold;
+	width: 140px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.submitButton200px {
+	color: #000000;
+	border-right: dimgray 1px ridge;
+	border-top: dimgray 1px ridge;
+	border-left: dimgray 1px ridge;
+	border-bottom: dimgray 1px ridge;
+	background-image: url(../../../../../logins/idprov/images/background/button-blu-lite-200px.jpg);
+	font-weight: bold;
+	width: 200px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.actionButton {
+	font-weight: normal;
+	color: #333333;
+	background-color: #F2F2F2;
+	border: 1px solid;
+	border-color: #D5D5D5;
+	padding: 1px 5px 1px 5px;
+	margin: 0px 5px 0px 5px;
+}
+
+.actionButton:hover {
+	font-weight: bold;
+	color: #333333;
+	background-color: #F2F2F2;
+	border: 1px solid;
+	border-color: #808080;
+	padding: 1px 5px 1px 5px;
+	margin: 0px 5px 0px 5px;
+}
+
+.actionButton:disabled {
+	font-weight: bold;
+	color: #949494;
+	background-color: #F2F2F2;
+	border: 1px solid;
+	border-color: #D5D5D5;
+	padding: 1px 5px 1px 5px;
+	margin: 0px 5px 0px 5px;
+}
+
+.submitButton {
+	color: #333333;
+	background-color: #F2F2F2;
+	border: 1px solid;
+	border-color: #D5D5D5;
+	padding: 1px 5px 1px 5px;
+	margin: 1px 5px 1px 5px;
+}
+
+.submitButton:hover {
+	font-weight: bold;
+	color: #333333;
+	background-color: #F2F2F2;
+	border: 1px solid;
+	border-color: #808080;
+	padding: 1px 5px 1px 5px;
+	margin: 1px 5px 1px 5px;
+}
+
+.submitButton:disabled {
+	font-weight: bold;
+	color: #949494;
+	background-color: #F2F2F2;
+	border: 1px solid;
+	border-color: #D5D5D5;
+	padding: 1px 5px 1px 5px;
+	margin: 1px 5px 1px 5px;
+}
+
+input[type=checkbox] {
+	margin: 5px;
+}
+
+input[type=submit] {
+	color: #333333;
+	background-color: #F2F2F2;
+	border: 1px solid;
+	border-color: #D5D5D5;
+	padding: 1px 5px 1px 5px;
+	margin: 1px 5px 1px 5px;
+}
+
+input[type=submit]:hover {
+	font-weight: bold;
+	color: #333333;
+	background-color: #F2F2F2;
+	border: 1px solid;
+	border-color: #808080;
+	padding: 1px 5px 1px 5px;
+	margin: 1px 5px 1px 5px;
+}
+
+input[type=submit]:disabled {
+	font-weight: bold;
+	color: #949494;
+	background-color: #F2F2F2;
+	border: 1px solid;
+	border-color: #D5D5D5;
+	padding: 1px 5px 1px 5px;
+	margin: 1px 5px 1px 5px;
+}
+
+.fieldRequired {
+	color: #CA2026;
+}
+
+/* Table Styling */
+.table_evenRow {
+	background-color: #FFFFFF;
+}
+
+.table_oddRow {
+	background-color: #EEEEEE;
+}
+
+.table_headerRow {
+	background-color: #EEEEDD;
+	color: #000000;
+}
+
+.table_headerRow A:link {
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0 3px 0 3px;
+	color: #000000;
+}
+
+.table_footerRow {
+	background-color: #EEEEDD;
+}
+
+.table_footerRow A:link {
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0 3px 0 3px;
+	color: #000000;
+}
+
+.table_defaultCell {
+	font-weight: normal;
+	font-size: 85%;
+	color: #676767;
+	text-align: left;
+	padding: 2px 5px 2px 5px;
+}
+
+/* special code to remove border around dataGrids */
+.table_dataGrid {
+	border-width: 0px;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	padding: 2px 5px 2px 5px;
+}
+
+/* Error Messages */
+.error {
+	border-color:red;
+}
+
+.errorLabel {
+	color:red;
+}
+
+.errorMsg {
+	color: red;
+	text-align: left;
+	font-size: 10pt;
+	padding: 0;
+	margin: 0;
+	line-height: auto;
+}
+
+#errorBox {
+	color: red;
+	text-align: left;
+	font-size: 10pt;
+	padding: 0;
+	margin: 0;
+	line-height: auto;
+}
+
+.closeError {
+	position: relative;
+}
+
+.closeError img{
+	position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.closeError:hover, .closeError:focus {
+	text-decoration: none;
+	cursor: pointer;
+	opacity: .5;
+}
+
+.warning_block {
+	background: url('../../../../../logins/idprov/images/iconWarning.gif') no-repeat 2px top;
+	background-position-y: 2px;
+	background-color: #FFFFFF;
+	border: 1px solid #FFA200;
+	padding: 2px 2px 2px 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.warning_block span {
+	font-weight: bold;
+}
+
+.displayWarningMessage {
+	text-align: left;
+}
+
+.info_block {
+	background: url('../../../../../logins/idprov/images/iconInformation.gif') no-repeat 2px top;
+	background-position-y: 2px;
+	background-color: #FFFFFF;
+	border: 1px solid #1994d2;
+	padding: 2px 2px 2px 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.info_block span {
+	font-weight: bold;
+}
+
+.displayInfoMessage {
+	text-align: left;
+}
+
+.error_block {
+	background: url('../../../../../logins/idprov/images/iconError.gif') no-repeat 2px top;
+	background-position-y: 2px;
+	background-color: #FFFFFF;
+	border: 1px solid #E70033;
+	padding: 2px 2px 2px 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.success_block {
+	background: url('../../../../../logins/idprov/images/iconSuccess.gif') no-repeat 2px top;
+	background-position-y: 2px;
+	background-color: #FFFFFF;
+	border: 1px solid #77B800;
+	padding: 2px 2px 2px 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.error_block span {
+	font-weight: bold;
+}
+
+.error_block div div {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.error_block br {
+	line-height: 2em;
+}
+
+.success_block div div {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.success_block br {
+	line-height: 2em;
+}
+
+.displayErrorMessage {
+	text-align: left;
+}
+
+.hideErrorMessage {
+	display: none;
+	line-height: 0px;
+}
+
+.appAnnouncement {
+	margin: 0px;
+	border: 0px;
+	float: right;
+	width: 98%;
+	padding: 0px 0px 0px 0px;
+}
+
+.app_provider {
+	font-size: 10pt;
+	font-weight: bold;
+	width: 25%;
+	text-align: left;
+	padding: 10px 5px 5px 0;
+}
+
+.app_application {
+	font-size: 10pt;
+	font-weight: normal;
+	width: 25%;
+	text-align: left;
+	padding: 5px 5px 5px 15px;
+}
+
+.app_status {
+	font-size: 10pt;
+	font-weight: normal;
+	width: 30%;
+	text-align: left;
+	padding: 10px 5px 5px 0;
+}
+
+.app_action {
+	font-size: 10pt;
+	font-weight: normal;
+	width: 15%;
+	text-align: left;
+	padding: 10px 5px 5px 0;
+}
+
+.app_message {
+	font-size: 10pt;
+	font-weight: normal;
+	width: 30%;
+	text-align: left;
+	padding: 10px 0 0 0;
+}
+
+.app_messagebody {
+	font-size: 10pt;
+	font-weight: normal;
+	width: 30%;
+	text-align: left;
+}
+
+.leftalign {
+	width: 70%;
+	text-align: left;
+}
+
+.rightalign {
+	width: 30%;
+	text-align: right;
+}
+
+.dashboard_link {
+	/*text-decoration: underline;*/
+	font-size: 10pt;
+}
+
+.dashboard_text {
+	font-size: 10pt;
+}
+
+.dashboard_table_text {
+	font-size: 10pt;
+	text-align: left;
+}
+
+.dashboard_list_item {
+	font-size: 10pt;
+	padding: 4px 0 0 0;
+}
+
+.dashboard_task_pending {
+	font-size: 10pt;
+	color: red;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignCenter {
+	text-align: center;
+}
+
+.width50P {
+	width: 50%;
+}
+
+.small_text {
+	font-size: 10pt;
+	color: #E10000;
+}
+
+.main-input-form3 {
+	font-weight: normal;
+	font-size: 90%;
+	width: 20%;
+	color: #000000;
+	text-align: left;
+	padding: 2px;
+	align: left;
+}
+
+.main-label-form3 {
+	font-weight: normal;
+	font-size: 90%;
+	width: 30%;
+	text-align: right;
+	padding: 2px;
+	vertical-align: top;
+	align: right;
+}
+
+.main-notes-form3 {
+	font-weight: normal;
+	font-size: 90%;
+	width: 50%;
+	text-align: left;
+	padding: 2px;
+	vertical-align: top;
+}
+
+.main-body-gray {
+	font-size: 13px;
+	font-weight: normal;
+	color: #000000;
+	text-align: left;
+	background-color: #EEEEEE;
+	border-top: 1px solid #8D8D8D;
+	border-bottom: 1px solid #8D8D8D;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.dfltFntClr {
+	color: #676767;
+}
+
+.fntClrBlack {
+	color: #000000;
+}
+
+/** Registration page ***/
+.header_text-main {
+	font-size: 75%;
+	font-weight: bold;
+	background-image: url(../../../../../logins/idprov/images/background/bg-main-2.jpg);
+	border-top: 0px;
+	border-bottom: 1px solid #8D8D8D;
+	background-repeat: repeat-x;
+	color: #000000;
+}
+
+.header_text-3 {
+	font-size: 75%;
+	font-weight: bold;
+	width: 100%;
+	color: #FFFFFF;
+	background-color: #99aa55;
+	border-top: 1px solid #8D8D8D;
+	border-bottom: 0px;
+}
+
+.body_text {
+	font: 11px/1.4em;
+}
+
+.small_text {
+	font-size: x-small;
+	color: #E10000;
+}
+
+.form-small-font {
+	font-weight: normal;
+	font-size: 0.8em;
+}
+
+.button1 {
+	color: #000000;
+	font-size: 11px;
+	font-weight: bold;
+	width: 80px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border-right: dimgray 1px ridge;
+	border-top: dimgray 1px ridge;
+	border-left: dimgray 1px ridge;
+	border-bottom: dimgray 1px ridge;
+	background-image: url(../../../../../logins/idprov/images/background/button-blu.gif);
+}
+
+.button2 {
+	color: #000000;
+	border-right: dimgray 1px ridge;
+	border-top: dimgray 1px ridge;
+	border-left: dimgray 1px ridge;
+	border-bottom: dimgray 1px ridge;
+	background-image: url(../../../../../logins/idprov/images/background/button-blu-lite.gif);
+	font-weight: bold;
+	width: 90px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.width81px {
+	width: 90px;
+    padding-top: 10px;
+}
+
+.alignTop {
+	vertical-align: top;
+}
+
+/* From taggedPanelCss.css*/
+/* Generated by F12 developer tools. This might not be an accurate representation of the original source file */
+.dr-stglpnl {
+	BORDER-BOTTOM: 1px solid;
+	BORDER-LEFT: 1px solid;
+	PADDING-BOTTOM: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-RIGHT: 1px;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-POSITION: right top;
+	BORDER-TOP: 1px solid;
+	BORDER-RIGHT: 1px solid;
+	PADDING-TOP: 1px
+}
+
+.dr-stglpnl-m {
+	PADDING-RIGHT: 3px
+}
+
+.dr-stglpnl-h {
+	BORDER-BOTTOM: 1px solid;
+	BORDER-LEFT: 1px solid;
+	PADDING-BOTTOM: 2px;
+	PADDING-LEFT: 2px;
+	PADDING-RIGHT: 2px;
+	BACKGROUND-REPEAT: repeat-x;
+	BACKGROUND-POSITION: left top;
+	BORDER-TOP: 1px solid;
+	CURSOR: pointer;
+	BORDER-RIGHT: 1px solid;
+	PADDING-TOP: 2px
+}
+
+.dr-stglpnl-b {
+	TEXT-ALIGN: left;
+	PADDING-BOTTOM: 10px;
+	PADDING-LEFT: 10px;
+	PADDING-RIGHT: 10px;
+	VERTICAL-ALIGN: top;
+	OVERFLOW: auto;
+	PADDING-TOP: 10px
+}
+
+.dr-stglpanel-marker {
+	FLOAT: right
+}
+
+.dr-stglpnl {
+	BORDER-BOTTOM-COLOR: #D4CFC7;
+	BACKGROUND-COLOR: #fff;
+	BORDER-TOP-COLOR: #D4CFC7;
+	BORDER-RIGHT-COLOR: #D4CFC7;
+	BORDER-LEFT-COLOR: #D4CFC7
+}
+
+.dr-stglpnl-h {
+	BORDER-BOTTOM-COLOR: #D4CFC7;
+	BACKGROUND-COLOR: #D4CFC7;
+	BORDER-TOP-COLOR: #D4CFC7;
+	COLOR: #000;
+	BORDER-RIGHT-COLOR: #D4CFC7;
+	FONT-SIZE: 11px;
+	BORDER-LEFT-COLOR: #D4CFC7;
+	FONT-WEIGHT: bold
+}
+
+.dr-stglpnl-b {
+	BACKGROUND-COLOR: #fff;
+}
+
+.dr-stglpnl-h {
+	BACKGROUND-IMAGE:
+		url(/credmgr/a4j_3_2_0-SNAPSHOTorg.richfaces.renderkit.html.GradientA/DATB/eAFbdWZ36KqZAA3WA8o_.faces)
+}
+
+.rowCenterUm {
+	color: #000;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/**** rich faces migration related css selectors added ****/
+
+/***rich:separator lineType=solid replacement****/
+.separator1 {
+	border-bottom: 1px solid #D5D5D5;
+}
+/***rich:separator lineType=dotted replacement****/
+.separator2 {
+	border-bottom: 1px dotted #D5D5D5;
+}
+/******used in dashboard page to match old text colour ********/
+.collapsiblePanelBody1.rf-cp-b {
+	font-size: 10pt !important;
+}
+/****used in DSMyAccountSection.xhtml to match old text colour*****/
+.richListStyle1 li.rf-ulst-itm {
+	list-style-type: circle;
+}
+/**rich:spacer width=10 replacement **/
+.spacersize10 {
+	margin: 10px;
+}
+/**rich:spacer width=5 replacement**/
+.spacersize5 {
+	margin: 5px;
+}
+/**style to set width=100% of rich:dataTable**/
+.richDataTableStyle1 {
+	width: 100%;
+}
+/**used to set text-color same as old ui used in WEB-INF\common\Panels\ModifyQuestionsFacelet.xhtml**/
+.questionHeader {
+	color: #676767;
+}
+/********************style for a4j:commandLink for rich:dataTable sort operation*************************/
+.dataTableSortLink {
+	text-decoration: none !important;
+	white-space: nowrap !important;
+	color: black !important;
+	outline: none !important;
+}
+/****************stye to align sort image centrally ******************************/
+.sortingArrows {
+	vertical-align: middle;
+	border: none;
+}
+/** used to set header colour same as old ui for rich:column.Used in \WEB-INF\common\Panels\UserSearchFacelet.xhtml **/
+.richColumnHeader1 {
+	background-color: #EEEEDD !important;
+	color: #000000 !important;
+	background-image: none !important;
+}
+/** used to set body text colour same as old ui for rich:column.Used in \WEB-INF\common\Panels\UserSearchFacelet.xhtml **/
+.rf-dt-c.richColumnStyleClass1 {
+	font-weight: normal;
+	font-size: 11px;
+	color: #676767;
+	text-align: left;
+	padding: 2px 5px 2px 5px;
+}
+/**style to set width=80% of rich:dataTable used in \WEB-INF\common\Panels\NewUserAppFacelet.xhtml**/
+.richDataTableStyle2 {
+	width: 80%;
+}
+/**style to set width=90% of rich:dataTable used in pages\orgAdmin\ApplicationSubscription.xhtml**/
+.richDataTableStyle3 {
+	width: 90%;
+}
+/**style to match header colour of rich:dataTable used in pages\orgAdmin\ApplicationSubscription.xhtml **/
+.richDataTableHeader2 th {
+	
+}
+
+/** used to set header colour same as old ui for rich:column.Used in \WEB-INF\common\Panels\OrgSearchFacelet.xhtml **/
+.richColumnHeader2 {
+	background-color: #EEEEDD !important;
+	color: #000000 !important;
+	background-image: none !important;
+}
+
+/*used to set header colour of rich:panel */
+.richPanelHeader1.rf-p-hdr {
+	background-image: url(../../../../../logins/idprov/images/rich-column-header1.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+.richDataTableStyle4 {
+	width: 50%;
+}
+/*used to set text colour and font for rich:panel body content */
+.richPanelBody1.rf-p-b {
+	color: #676767;
+	font-size: 100%;
+}
+/*used to set width of richFileUpload component same as old ui */
+.fileUploadStyle1.rf-fu {
+	width: 225px;
+	background-color: #EEEE !important;
+}
+/*below built in style changed to adjust height of collpsible panel header */
+.rf-cp-gr {
+	margin-top: -4px !important;
+	width: 100% !important;
+}
+
+.rf-cp-hdr {
+	font-size: 10pt !important;
+}
+
+.rf-cp-lbl {
+	padding-bottom: 2px !important;
+}
+
+.rf-cp-exp-ico {
+	padding-top: 3px !important;
+}
+
+.rf-cp-lbl {
+	padding-left: 2px !important;
+}
+/*used to set font and cour of rich:messages same as old ui*/
+.rf-msgs.richMessageError {
+	color: red;
+	text-align: left;
+	font-size: 10pt;
+	padding: 0;
+	margin: 0;
+	line-height: auto;
+}
+/*removes red icon from rich error message */
+.rf-msgs-err {
+	background-image: none !important;
+}
+/*removes red icon from rich fatal message */
+.rf-msgs-ftl {
+	background-image: none !important;
+}
+
+.rf-ds-btn {
+	margin: 0px 5px 5px 5px !important;
+}
+
+.rf-fu-hdr {
+	background: none !important;
+	border-width: 0px !important;
+}
+
+.rf-fu {
+	background: none !important;
+	border-width: 0px !important;
+}
+
+.rf-fu-btn-add, .rf-fu-btn-add-dis {
+	margin: 0px !important;
+}
+
+.rf-fu-btn-cnt-add, .rf-fu-btn-cnt-add-dis {
+	background: none !important;
+	overflow: inherit !important;
+	padding-left: 5px !important;
+}
+
+/** styles for richtables
+.rf-dt-hdr-c{
+	font-size: 10pt !important;
+}
+
+.rf-dt-c{
+	font-size: 10pt !important;
+}
+.dataTableSortLink{
+	font-size: 10pt !important;
+}
+**/
+.scrollerCell {
+	font-size: 10pt !important;
+}
+/*used to center h:panelGrid containing a4j:commandLink used in rich:dataTable */
+.table_center {
+	margin-left: auto;
+	margin-right: auto;
+}
+/*following properties used in accesslogin module*/
+/*set width of input box - ShowOtpLogin.xhtml */
+.input1 {
+	width: 190px;
+}
+/*set odd column style for h:panelGrid - ShowOtpLogin.xhtml */
+.tableCell {
+	padding-left: 10px;
+	width: 550px;
+}
+/*used in accessLogin module */
+.loginForm {
+	line-height: 110%;
+}
+
+/*used in accessLogin module */
+.newPasswordForm {
+	line-height: 110%;
+	margin-left: 350px;
+}
+
+.evenColumn {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.oddColumn {
+	text-align: left;
+}
+
+.input2 {
+	width: 140px;
+}
+
+.showsecretform {
+	margin-left: 150px;
+}
+
+/*used in ShowSecretQnAS.xhtml file */
+table.tableStyleClass2.rf-dg {
+	border: none;
+}
+
+.tableStyleClass2 .rf-dg-c {
+	border: none;
+	width: 550px;
+	height: 75px;
+}
+
+.body-text1 {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-size: 13px;
+}
+
+.body-text2 {
+	padding-left: 10px;
+	font-size: 13px;
+}
+
+.inputTableSmall {
+	min-width: 500px;
+}
+
+/****selectors for registration/approval workflows ***/
+.sectionHeader2 {
+	font-weight: bold;
+	text-align: left;
+	color: #FFFFFF;
+	background-color: #808080;
+	border-top: 1px solid #8D8D8D;
+	border-bottom: 0px;
+	padding: 0px 5px 5px 5px;
+	font-size: 12px;
+}
+
+.searchForWrap {
+	margin-top: 20px;
+}
+
+.main-master-form {
+	width: 50%;
+}
+
+.right-alignment {
+	float: right;
+	padding-right: 10px;
+}
+
+.right-alignment-no-padding {
+	float: right;
+}
+
+.left-alignment {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.sectionHeader1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #000000;
+	text-align: left;
+}
+
+.rowCenter {
+	width: 80%;
+	color: #000;
+	text-align: center;
+}
+
+/**to hide clear button in rich:fileUpload **/
+.rf-fu-btn-clr {
+	visibility: hidden !important;
+}
+
+.row-offset {
+	margin-left: 0px;
+	padding-left: 15px;
+}
+
+commandSection {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.lineMargin10px {
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+@media only screen and (max-width: 767px) {
+	.header_title {
+		text-align: center;
+		margin-top: 10px;
+		vertical-align: middle;
+		font-size: 14pt;
+		color: #000000;
+	}
+}
+
+.form-label {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+/**usersearchLayout2013.xhtml styles **/
+.userLookUpTable {
+	border: black 1px ridge;
+}
+
+.userLookUpPadding {
+	padding-left: 10px;
+}
+
+#orgRegForm\:hq_ctry_code, #orgRegForm\:orgctry_code,
+	#orgRegForm\:tisacitizen_ctry_code, #orgRegForm\:cccitizen_ctry_code,
+	#userProfileForm\:citizen_ctry_code, #orgprofileform\:hq_ctry_code,
+	#orgprofileform\:ctry_code {
+	width: 20em !important;
+}
+
+.rf-pb-rmng {
+	height: 20px !important;
+	width: auto !important;
+	border-color: #92C0EA !important;
+}
+
+.rf-pb-prgs {
+	background-color: #CAE0F5 !important;
+	background-image: none !important;
+}
+
+/* .rf-pb-lbl{
+    color: #FFFFFF !important;
+} */
+.Sam_Table_Format {
+	overflow: auto;
+}
+
+input[disabled], select[disabled] {
+	background-color: #F2F2F2;
+	color: #000000;
+}
+
+@media ( max-width :767px) {
+	.footerCenterAlign {
+		float: none;
+		text-align: center;
+	}
+}
+
+@media ( max-width : 1200px) {
+	.paddingsecondrow {
+		padding-bottom: 15px;
+	}
+}
+
+@media ( max-width :768px) {
+	.headerLeftAlign {
+		float: none;
+		text-align: left;
+	}
+}
+
+@media ( max-width :1024px) {
+	.mobile-hide {
+		display: none;
+	}
+}
+
+@media ( max-width :767px) {
+	.hideLogo {
+		display: none;
+	}
+}
+
+/* Login Form */
+.form-signin {
+	max-width: 330px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	background-color: #e4e4e4;
+}
+
+.form-signin .form-signin-heading, .form-signin .checkbox {
+	margin-bottom: 10px;
+}
+
+.form-signin .form-control {
+	position: relative;
+	border-radius: 0px !important;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+	color: #515151;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+#LoginBtn {
+	background-color: #515151;
+	color: #FFFFFF;
+	padding: 10px 16px;
+	margin: 0px !important;
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.3333333;
+}
+
+#LoginBtn:hover {
+	color: #FFFFFF;
+	background-color: #515151;
+	border: 1px solid;
+	border-color: #808080;
+	padding: 10px 16px;
+	margin: 0px !important;
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	line-height: 1.3333333;
+}
+
+.forgotLabel {
+	position: relative;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-weight: 400;
+	min-height: 20px;
+	text-align: right;
+}
+
+input::-webkit-input-placeholder {  /* Chrome */
+color: #808080 !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color: #808080 !important; 
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #808080 !important;
+}
+ 
+input:-ms-input-placeholder {  /* IE 10+ */
+color: #808080 !important;
+}
+
+.search-panel select[size] {
+	height: 34px;
+	width: auto;
+    margin-right: -1px;
+}
+
+.search-panel input[type=text] {
+	height: 34px;
+	border-radius: 0; 
+}
+
+.phase-nav {
+	float: left;
+	width: 100%;
+	margin: 20px 0 20px 0;
+}
+
+.phase-nav ul {
+	margin: 0;
+	padding: 0 0 0 15px;
+}
+
+.phase-nav ul li {
+	margin: 0;
+	padding: 0 5px;
+	list-style-type: none;
+	display: block;
+	float: left;
+	line-height: 29px;
+	font-size: 16px;
+	color: #333333;
+}
+
+.phase-nav ul li .active {
+	font-weight: bold;
+}
+
+.compMarginLeft{
+	margin-left: 15px;
+}

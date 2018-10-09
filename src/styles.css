@@ -1,1 +1,406 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+	font-family: digital;
+	src: url(/assets/fonts/digital-7.ttf);
+}
+
+@font-face {
+	font-family: Herma;
+	src: url(/assets/fonts/HemeraIIDEMO.ttf);
+}
+
+@font-face {
+	font-family: Metrophobic;
+	src: url(/assets/fonts/Metrophobic.ttf);
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	background: black;
+}
+
+#pinned-element1 {
+	z-index: 1;
+}
+
+.stripes {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-image: repeating-linear-gradient(90deg, rgb(65,37,32), rgb(65,37,32) 30px, rgb(104,36,22) 30px, rgb(104,36,22) 60px);
+	top: 0;
+}
+
+.stripes::after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,.3), transparent, rgba(0,0,0,.6));
+}
+
+.opacit {
+  opacity: .4;
+}
+
+
+/**** CONTACT ****/
+.contact {
+  background: rgb(0,0,0);
+}
+
+.aboveFold,
+.contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.stack {
+  height: calc(100% - 80px);
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.telegraph {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(255,255,255);
+}
+
+/*** Cogs ***/
+.menuCog {
+	position: fixed;
+	right: -100px;
+	top: -100px;
+}
+
+.cogA {
+	left: 25px;
+	top: 6px;
+}
+
+.cogC {
+	position: absolute !important;
+  top: -70px;
+  left: -70px;
+}
+
+.cogB {
+	top: -25px;
+	right: -13px;
+}
+
+.cogD {
+	top: -25px;
+	left: -13px;
+}
+
+.cogE {
+	right: 25px;
+	top: 6px;
+}
+
+.cogF {
+	position: absolute !important;
+	bottom: -70px;
+	right: -70px;
+}
+
+.cog2A {
+
+}
+
+.cog2B {
+	top: 35px;
+	right: -18px;
+}
+
+.cog2C {
+  right: -25px;
+	top: -2px;
+}
+
+.cog2D {
+	top: 35px;
+	right: -35px;
+}
+
+.cog2E {
+	top: -75px;
+	left: -75px;
+	position: absolute !important;
+}
+
+.lg2r,
+.lg2,
+.sm1,
+.sm1r,
+.md1r {
+	position: relative;
+}
+
+.cogLG,
+.cogMD,
+.cogSM {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+
+.cogLG {
+	height: 218px;
+	width: 218px;
+}
+
+.cogMD {
+	width: 200px;
+	height: 200px;
+}
+
+.cogSM {
+	width: 100px;
+	height: 100px;
+}
+
+.cogCenter {
+	border-radius: 100%;
+	height: 80%;
+	width: 80%;
+	position: relative;
+}
+
+.cogSM .cogCenter {
+	height: 70%;
+	width: 70%;
+}
+
+.cogCenter:before {
+  position: absolute;
+  content: '';
+  border: 30px solid rgb(153,153,153);
+  border-radius: 100%;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  box-shadow: 0px 0px 10px 1px rgba(77,57,8,.5) inset, 0px 0px 10px 1px rgba(77,57,8,.8);
+}
+
+.cogSM .cogCenter:before {
+	border: 10px solid rgb(153,153,153);
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+}
+
+.centerWrap {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cogCenterMid {
+	border-radius: 100%;
+	/* background: radial-gradient(transparent, transparent, rgba(77,57,8,.7)); */
+	height: 25%;
+	width: 25%;
+	position: relative;
+}
+
+.cogCenterMid:before {
+  position: absolute;
+  content: '';
+  border: 15px solid rgb(153,153,153);
+  border-radius: 100%;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  box-shadow: 0px 0px 13px 8px rgba(0,0,0,.75) inset, 0px 0px 3px 1px rgba(0,0,0,.3);
+}
+
+.cogSM .cogCenterMid:before {
+	border: 6px solid rgb(153,153,153);
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+	box-shadow: 0px 0px 13px 2px rgba(0,0,0,.75) inset, 0px 0px 3px 1px rgba(0,0,0,.3);
+}
+
+.pegWrap {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	z-index: -3;
+}
+
+.pegStick,
+.barStick {
+	width: 10%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.barStick:nth-child(2) {
+	position: absolute;
+	transform: rotate(90deg);
+}
+
+.pegStick:nth-child(6),
+.pegStick:nth-child(5),
+.pegStick:nth-child(4),
+.pegStick:nth-child(3),
+.pegStick:nth-child(2) {
+	position: absolute;
+}
+
+.pegStick:nth-child(2) {
+	transform: rotate(30deg);
+}
+
+.pegStick:nth-child(3) {
+	transform: rotate(60deg);
+}
+
+.cogSM .pegStick:nth-child(odd) {
+	display: none;
+	visibility: collapse;
+}
+
+.pegStick:nth-child(4) {
+	transform: rotate(90deg);
+}
+
+.pegStick:nth-child(5) {
+	transform: rotate(120deg);
+}
+
+.pegStick:nth-child(6) {
+	transform: rotate(150deg);
+}
+
+.pegs {
+  border-bottom: 30px solid rgb(153,153,153);
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	height: 0;
+	width: 20px;
+	filter: drop-shadow(0px 1px 1px rgba(77,57,8,1));
+}
+
+.cogMD .pegs {
+	width: 15px !important;
+}
+
+.cogSM .pegs {
+	border-bottom: 20px solid rgb(153,153,153);
+	width: 15px !important;
+}
+
+.pegs:nth-child(2) {
+	transform: scaleY(-1);
+	filter: drop-shadow(0px -1px 1px rgba(77,57,8,1));
+}
+
+.cogBars {
+	margin-top: 30px;
+	border-top: 55px solid rgb(153,153,153);
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	height: 0;
+	width: 20px;
+}
+
+.cogBars:nth-child(2) {
+	transform: scaleY(-1);
+	margin-bottom: 30px;
+}
+
+.menuCog .cogLG,
+.sm1 .cogSM,
+.sm1r .cogSM,
+.sm2 .cogSM,
+.sm2r .cogSM,
+.topLeft .cogLG,
+.topRight .cogLG,
+.lg2 .cogLG,
+.lg2r .cogLG,
+.lg3 .cogLG,
+.lg3r .cogLG,
+.md1 .cogMD,
+.md1r .cogMD,
+.md2 .cogMD,
+.md2r .cogMD {
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.menuCog .cogLG,
+.topLeft .cogLG,
+.topRight .cogLG,
+.lg2 .cogLG,
+.lg2r .cogLG,
+.lg3 .cogLG,
+.lg3r .cogLG,
+.md1 .cogMD,
+.md1r .cogMD,
+.md2 .cogMD,
+.md2r .cogMD {
+	animation-duration: 10000ms;
+}
+
+.menuCog .cogLG,
+.topRight .cogLG,
+.sm1 .cogSM,
+.sm2r .cogSM,
+.md1 .cogMD,
+.md2 .cogMD,
+.lg2r .cogLG,
+.lg3r .cogLG {
+	animation-name: spin;
+}
+
+.topLeft .cogLG,
+.sm1r .cogSM,
+.sm2 .cogSM,
+.md1r .cogMD,
+.md2r .cogMD,
+.lg2 .cogLG,
+.lg3 .cogLG {
+	animation-name: counterSpin;
+}
+
+.sm1 .cogSM,
+.sm1r .cogSM,
+.sm2 .cogSM,
+.sm2r .cogSM {
+	animation-duration: 5000ms;
+}

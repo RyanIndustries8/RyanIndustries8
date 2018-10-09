@@ -1,0 +1,132 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" />
+
+	<!-- Bootstrap core CSS -->
+	<link href="idprov/stylesheets/bootstrap.min.css" rel="stylesheet" />
+	<link href="idprov/stylesheets/login/custom_bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<link href="idprov/stylesheets/login/reset_jsp.css" rel="stylesheet" type="text/css" />
+	<link href="idprov/stylesheets/login/global_jsp.css" rel="stylesheet" type="text/css" />
+	<link media="all" href="idprov/stylesheets/login/screen_sig_jsf.css" rel="stylesheet" type="text/css" />
+	<link href="idprov/stylesheets/pwdmeter.css" rel="stylesheet" type="text/css" />
+    <link href="idprov/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+window["_tsbp_"] = { ba : "X-TS-BP-Action", bh : "X-TS-AJAX-Request"};
+//-->
+</script>
+	<title>Welcome | Log In</title></head><body>
+
+    <wrap class="blue">
+
+	<header>
+    <div class="headerContent">
+      <div class="logo">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 width="1814.954px" height="358.424px" viewBox="0 0 1814.954 358.424" enable-background="new 0 0 1814.954 358.424"
+					 xml:space="preserve">
+					<path class="filler" d="M221.422,202.981l-0.557-0.005c6.741-23.358,1.814-52.67-25.178-88.977c0,0-30-34.667-32-43.333
+						c0,0-6.774-22,4.946-32c0,0-18.28-2-46.946,30.667c0,0-19.333-37.333,14.667-69.333c0,0-107.982,40.018-42.458,120.053
+						l-2.976,16.74c0,0-14.084,3.168-22.25,9.168l-16.597-11.936c-1.56-7.107-1.655-16.079,0.948-27.359c0,0-56.8,42.823-47.168,94.384
+						l-0.844,0.129L1,201.147c-0.983,3.165-1.107,8.981-0.936,14.532c-0.171,5.55-0.047,11.367,0.936,14.531l4.008-0.033l15.41,2.357
+						c4.051,5.32,8.992,10.659,14.948,15.984c2.797,6.2,5.304,9.545,5.304,9.545l-17,24.666c11.167,14,20.667,20.166,20.667,20.166
+						l24.333-17.499c8.167,6,22.25,9.168,22.25,9.168l5.333,30c20.917,1.667,29.5-0.419,29.5-0.419l4.75-29.5
+						c9.75-1.583,21-8.412,21-8.412l25.166,17.332c10.5-7,21.334-20.666,21.334-20.666l-17.418-23.918
+						c2.118-3.369,3.838-6.598,5.216-9.488c5.696-4.253,11.119-8.965,15.987-14.165l18.549-3.264c0.191-1.251,0.357-2.479,0.506-3.684
+						l0.578-0.005c0,0,0.553-4.978,0.357-12.697C221.975,207.959,221.422,202.981,221.422,202.981z M141.535,215.679
+						c0,16.914-13.711,30.625-30.624,30.625c-16.914,0-30.625-13.711-30.625-30.625c0-16.913,13.711-30.625,30.625-30.625
+						C127.824,185.054,141.535,198.766,141.535,215.679z"/>
+					<text transform="matrix(1 0 0 1 234.5742 296.2461)" class="filler" font-family="'Optima-Regular'" font-size="232">RyanIndustries8</text>
+				</svg>
+			</div>
+      <div class="header_link">
+          <a target="_blank" href="#" class="mobile-hide"><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a>
+          <a target="_blank" href="#" class="mobile-hide"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a>
+					<div class="dropdown">
+						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Select Theme
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" id="blue" href="#">Blue</a>
+							<a class="dropdown-item" id="red" href="#">Red</a>
+							<a class="dropdown-item" id="purple" href="#">Purple</a>
+						</div>
+					</div>
+      </div>
+      </div>
+	</header>
+
+	<container>
+
+	<!-- Begin Login Form -->
+	<div class="container">
+      <form name="accessuserloginform" id="accessLoginForm" method="post"
+        action="#" class="form-signin" novalidate>
+        <div>
+          <input type="hidden" id="domainName" name="domainName" value="" />
+            <h4 class="form-signin-heading">Log In</h4>
+            <input id="accessLoginId" type="email" name="accessuserloginid" tabindex="1"
+              autofocus class="form-control" placeholder="User ID or E-mail Address" />
+               <span class="forgotLabel">
+                 <a href="#">Forgot User ID? </a>
+               </span>
+							 <input id="accessLoginPass" type="password" name="accessuserpassword" tabindex="1"
+	               autofocus class="form-control" placeholder="Password" />
+	                <span class="forgotLabel">
+	                  <a href="#">Forgot Password? </a>
+	                </span>
+         </div>
+            <input id="LoginBtn" type="submit" name="LoginBtn" value=" Continue " tabindex="2" />
+      </form>
+
+      <div class="advertisement">
+      <h1>Aliquam tincidunt mauris eu risus</h1>
+      <h2>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</h2>
+      <a href="#">Learn More<div class="arrow"></div></a>
+      </div>
+	</div>
+	<!-- End Login Form -->
+
+	<!-- When Using this section in the future, styling needs to change -->
+	</container>
+	<footer>
+    <div class="footerContent">
+				<div>Copyright 2016 <a target="_blank" href="#">Terms of Access</a> <a target="_blank" href="#">Privacy</a>
+			</div>
+					<div><strong>Designed by RyanIndustries8</strong>
+      </div>
+      </footer>
+	</wrap>
+
+	<script src="idprov/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script src="idprov/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="idprov/js/pwdmeter.js" type="text/javascript"></script>
+	<script src="idprov/js/popper.js" type="text/javascript"></script>
+	<script src="idprov/js/switch.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery('[data-toggle="tooltip"]').tooltip();
+			var isOS = /iPad|iPhone|iPod/.test(navigator.platform);
+			if (isOS){
+				jQuery('body').css( 'cursor', 'pointer' );
+				jQuery('body').on("touchstart", function(e){
+					jQuery('[data-toggle="tooltip"]').each(function () {
+						// hide any open tooltips when the anywhere else in the body is clicked
+						if (!jQuery(this).is(e.target) && jQuery(this).has(e.target).length === 0 && jQuery('.tooltip').has(e.target).length === 0) {
+							jQuery(this).tooltip('hide');
+						}////end if
+					});
+				});
+			}
+		});
+</script>
+</body>
+</html>

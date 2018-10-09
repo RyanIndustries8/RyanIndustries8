@@ -1,0 +1,20 @@
+<div id="headerLocation">
+<header>
+    <a class="flexCenterRow" id="navLogo" [routerLink]="['/']">
+      <img class="logo" src={{logo}} />
+      <h1 class="name">{{title}}</h1>
+    </a>
+    <div id="menuIcon">
+      <div class="bars"></div>
+    </div>
+</header>
+
+<menu>
+  <audio id="gears1" src="assets/audio/gears.mp3" loop="loop" controls></audio>
+  <ul>
+    <li *ngFor="let page of linkingPgs">
+      <h3><a [routerLink]="(page.link)">{{page.pgTitle}}</a></h3>
+    </li>
+  </ul>
+</menu>
+</div>

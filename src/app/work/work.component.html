@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div class="workContainer">
+  <app-socialmedia></app-socialmedia>
+  <h1>{{ title }}</h1>
+
+  <div class="grid">
+    <a class="grid-item" *ngFor="let model of projects" [routerLink]="['/model', model.id]"
+      [ngStyle]="{'background': 'url('+ model.sample +') center center',
+                  'backgroundSize': 'cover'}" >
+      <div class="tag" (hover)="toggle()"><h2>{{ model.label }}</h2><h4>{{ model.sublabel }}</h4></div>
+    </a>
+  </div>
+</div>

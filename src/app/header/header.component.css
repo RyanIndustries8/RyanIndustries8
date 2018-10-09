@@ -1,0 +1,128 @@
+#headerLocation {
+  position: fixed;
+  top: 0;
+  z-index: 999999999;
+}
+
+header {
+  background: transparent;
+  width: calc(100% - 40px);
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  transition: .8s;
+  z-index: 999;
+}
+
+.flexCenterRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header a {
+  color: rgb(255,255,255);
+}
+
+#navLogo {
+  opacity: 0;
+  margin-top: -50vh;
+}
+
+.logo {
+  height: 35px;
+  margin-right: 10px;
+}
+
+.name {
+  transition: width .1s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#menuIcon {
+  width: 30px;
+	height: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	cursor: pointer;
+	-webkit-transition: all 0.8s ease;
+  z-index: 99;
+  }
+
+  .bars,
+  .bars:before,
+  .bars:after {
+  	height: 2px;
+  	width: 100%;
+  	background: rgb(255,255,255);
+  	border-radius: 20px;
+  }
+
+  .bars:before,
+  .bars:after {
+  	content: '';
+  	position: absolute;
+  }
+
+  .bars:before {
+  	top: 0;
+  }
+
+  .bars:after {
+  	bottom: 0;
+  }
+
+
+menu {
+  height: 100vh;
+  width: 30%;
+  background: radial-gradient(rgb(225,202,171), rgb(210,175,137));
+  margin: 0;
+  padding: 90px 0px 0px 0px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-left: 4px solid rgb(167,135,97);
+  z-index: 99;
+}
+
+menu ul {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  position: absolute;
+  right: 0;
+}
+
+ul li {
+  margin: 0 20px;
+}
+
+ul li:last-child {
+  margin: 0 0 0 20px;
+}
+
+menu a {
+  color: rgb(41,23,9);
+}
+
+@media only screen and (min-width: 0) and (max-width: 760px),
+only screen and (min-device-width: 0) and (max-device-width: 760px) {
+  ul {
+    width: 230px;
+  }
+}

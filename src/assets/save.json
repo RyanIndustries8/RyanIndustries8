@@ -1,0 +1,247 @@
+[
+  {
+    "id": 1,
+    "label": "Megakyle83",
+    "sublabel": "Marketing, Portfolio, 3D Modling",
+    "company": "Freelance",
+    "sample": "/assets/img/megakyle83home.png",
+    "img": [
+      {"render": "/assets/img/megakyle83home.png"},
+      {"render": "/assets/img/megakyle83Menu.png"},
+      {"render": "/assets/img/megakyle83Work.png"}
+    ],
+    "about": "Megakyle83 is a fantastic 3D modeler and this sites simplicity showcases the art with a subtle touch of scrolling effects.",
+    "responsive": "Yes",
+    "tools": "HTML5, CSS, JavaScript",
+    "library": "Angular, jQuery, ScrollMagic, GreenSock",
+    "link": "Megakyle83.com",
+    "url": "http://megakyle83.com/"
+  },
+  {
+    "id": 2,
+    "label": "Bioshock Inspired CSS Graphics",
+    "sublabel": "Marketing, CSS Graphics",
+    "company": "Freelance",
+    "sample": "/assets/img/Container.png",
+    "img": [
+      {"render": "/assets/img/containerSceen.png"},
+      {"render": "/assets/img/signs.png"},
+      {"render": "/assets/img/Container.png"},
+      {"render": "/assets/img/containerPanels.png"},
+      {"render": "/assets/img/cones.png"}
+    ],
+    "about": "It all started with the idea for a neon sign and became a new possibility for the future of the web. Each of these designs were taken from models featured in the first Bioshock game and completely built out using HTML, CSS, and jQuery",
+    "responsive": "No",
+    "tools": "HTML5, CSS, JavaScript",
+    "library": "jQuery",
+    "link": ""
+  },
+  {
+    "id": 3,
+    "label": "Hero Image Login for Multiple Themes",
+    "sublabel": "Prototype, Case Study",
+    "company": "Sila SG",
+    "sample": "/assets/img/blueTemplate.png",
+    "img": [
+      {"render": "/assets/img/blueTemplate.png"},
+      {"render": "/assets/img/redTemplate.png"},
+      {"render": "/assets/img/purpleTemplate.png"}
+      ],
+      "about": "This prototype was used as a case study to determine how a modernized hero image login screen could be simply coded to accomedate multiple themes/companies in one page. The key to the dessign was the one class change at the top of the page that would determine the display of the theme.",
+      "responsive": "Yes",
+      "tools": "HTML5, CSS",
+      "library": "none",
+      "link": ""
+  },
+  {
+    "id": 4,
+    "label": "Self Service",
+    "sublabel": "Prototype, Aviation",
+    "company": "Sila SG",
+    "sample": "/assets/img/ball1.png",
+    "img": [
+      {"render": "/assets/img/ball1.png"},
+      {"render": "/assets/img/ball2.png"},
+      {"render": "/assets/img/ball3.png"}
+    ],
+    "about": "Developed for a short demonstration by the client's customer base, this site features a user self management subscription, payment, and purchase board, ",
+    "responsive": "Yes",
+    "tools": "HTML5, CSS, JavaScript",
+    "library": "none",
+    "link": ""
+  },
+  {
+    "id": 5,
+    "label": "Map Ordering",
+    "sublabel": "Prototype, Aviation",
+    "company": "Sila SG",
+    "sample": "/assets/img/tools1.png",
+    "img": [
+      {"render": "/assets/img/tools1.png"},
+      {"render": "/assets/img/tools2.png"},
+      {"render": "/assets/img/tools3.png"}
+      ],
+      "about": "Developed for a short demonstration by the client's customer base, this site features a user self management subscription, payment, and purchase board, ",
+      "responsive": "Yes",
+      "tools": "HTML5, CSS, JavaScript",
+      "library": "none",
+      "link": ""
+  },
+  {
+    "id": 6,
+    "label": "Portal Themed Demo",
+    "sublabel": "Prototype, Case Study",
+    "company": "Sila SG",
+    "sample": "/assets/img/portal.png",
+    "img": [
+      {"render": "/assets/img/portal.png"},
+      {"render": "/assets/img/portalBtm.png"}
+      ],
+      "about": "This prototype was used as a case study to show the benefits of responsive design and to also demonstrate, through the use of media queries, that responsive changes can be coded quickly to save time and money.",
+      "responsive": "Yes",
+      "tools": "HTML5, CSS",
+      "library": "none",
+      "link": "PortalDemo",
+      "url": "http://ryanindustries8.com/portaldemo"
+  },
+  {
+    "id": 7,
+    "label": "Platform Marketing",
+    "sublabel": "Prototype, Aviation",
+    "company": "Sila SG",
+    "sample": "/assets/img/ball1.png",
+    "img": [
+      {"render": "/assets/img/ball1.png"},
+      {"render": "/assets/img/ball2.png"},
+      {"render": "/assets/img/ball3.png"}
+    ],
+    "about": "This project, while only featuring here the marketing pages, brought new front-end concepts to this client's project with the introduction of HTML5 from table-based layouts. This project set the tone for the development of the rest of the project and was featured on a commemorative plaque given out to the developers of this project.",
+    "responsive": "Yes",
+    "tools": "HTML5, CSS, JavaScript",
+    "library": "none",
+    "link": ""
+  },
+  {
+    "id": 8,
+    "label": "Egyptian Mythology",
+    "sublabel": "Education",
+    "company": "Freelance",
+    "sample": "/assets/img/Container.png",
+    "img": [
+      {"render": "/assets/img/containerSceen.png"},
+      {"render": "/assets/img/signs.png"},
+      {"render": "/assets/img/Container.png"},
+      {"render": "/assets/img/containerPanels.png"},
+      {"render": "/assets/img/cones.png"}
+    ],
+    "about": "Featuring wikipedia based information, this site features a map, quiz, and a fun way to educate children about the mythology of the Ancient Egyptians. Originally a college project, it was recently updated to reflect the most current design trends in front-end.",
+    "responsive": "Yes",
+    "tools": "HTML5, CSS, JavaScript",
+    "library": "Angular, jQuery",
+    "link": ""
+  },
+  {
+    "id": 9,
+    "label": "Skookum Rendeverous",
+    "sublabel": "Marketing",
+    "company": "Freelance",
+    "sample": "/assets/img/Container.png",
+    "img": [
+      {"render": "/assets/img/containerSceen.png"},
+      {"render": "/assets/img/signs.png"},
+      {"render": "/assets/img/Container.png"},
+      {"render": "/assets/img/containerPanels.png"},
+      {"render": "/assets/img/cones.png"}
+    ],
+    "about": "In Skookum Idaho sits a beautiful RV Park with lots to fill. This website features a minimalistic design, ample whitespace, and a flash photo slider. Originally the site was to feature a JavaScript based photo slider, but many of the residents were unable to view them on their older machines, at the request of the client, Flash was used.",
+    "responsive": "Yes",
+    "tools": "HTML5, CSS, JavaScript, Flash, ActionScript, PHP",
+    "library": "None",
+    "link": ""
+  },
+  {
+    "id": 10,
+    "label": "Seven Deadly Sins",
+    "sublabel": "Education",
+    "company": "Freelance",
+    "sample": "/assets/img/Container.png",
+    "img": [
+      {"render": "/assets/img/containerSceen.png"},
+      {"render": "/assets/img/signs.png"},
+      {"render": "/assets/img/Container.png"},
+      {"render": "/assets/img/containerPanels.png"},
+      {"render": "/assets/img/cones.png"}
+    ],
+    "about": "I've always been a fan of poetic liturature, but the motivation for this college project wasn't Dante Ali came from the movie Seven, you know the one with Brad Pitt and Morgan Freeman who chase down the serial killer referencing the seven deadly sins. I won't spoil it for you if you haven't seen it. While this site has been updated since it's creation in 2008, it still features the flash fire header. Who doesn't love a little nistagia? And if you haven't seen the movie, stop looking at this site right now and go watch it!",
+    "responsive": "Yes",
+    "tools": "HTML5, CSS, JavaScript, Flash, ActionScript, PHP",
+    "library": "None",
+    "link": ""
+  },
+  {
+    "id": 11,
+    "label": "SEO Blocks",
+    "sublabel": "Graphics",
+    "company": "Freelance",
+    "sample": "/assets/img/cubes.png",
+    "img": [
+      {"render": "/assets/img/cubes.png"}
+    ],
+    "about": "Featuring some of the top search engines, this graphic was designed using the power of Photoshop.",
+    "responsive": "No",
+    "tools": "Photoshop",
+    "library": "None",
+    "link": ""
+  },
+  {
+    "id": 12,
+    "label": "DJ",
+    "sublabel": "Graphics",
+    "company": "Freelance",
+    "sample": "/assets/img/alien.jpg",
+    "img": [
+      {"render": "/assets/img/alien.jpg"}
+    ],
+    "about": "This simple graphic was brought to me as a rough sketch and I cleaned it up using the pen tool in Illustrator.",
+    "responsive": "No",
+    "tools": "Illustrator",
+    "library": "None",
+    "link": ""
+  },
+  {
+    "id": 13,
+    "label": "Floating Tree",
+    "sublabel": "Graphics",
+    "company": "Freelance",
+    "sample": "/assets/img/dreams.png",
+    "img": [
+      {"render": "/assets/img/dreams.png"},
+      {"render": "/assets/img/tree1.png"},
+      {"render": "/assets/img/tree.png"}
+    ],
+    "about": "Inspired by the beautiful scenes from the movie The Fountain, this design was used as the backdrop of my portfolio for several years while I freelanced.",
+    "responsive": "No",
+    "tools": "Photoshop",
+    "library": "None",
+    "link": ""
+  },
+  {
+    "id": 14,
+    "label": "Line Art Graphics",
+    "sublabel": "Graphics",
+    "company": "Freelance",
+    "sample": "/assets/img/saturn.jpg",
+    "img": [
+      {"render": "/assets/img/saturn.jpg"},
+      {"render": "/assets/img/heels2.png"},
+      {"render": "/assets/img/chessKnight2.png"},
+      {"render": "/assets/img/lightbulb.png"},
+      {"render": "/assets/img/teacup.png"}
+    ],
+    "about": "A series of graphics using custom set brush in Photoshop",
+    "responsive": "No",
+    "tools": "Photoshop",
+    "library": "None",
+    "link": ""
+  }
+]

@@ -1,0 +1,380 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**** GLOBAL STYLES ****/
+
+				
+/**** GLOBAL HEADER STYLES ****/
+
+
+/**** H1 IMAGE REPLACEMENT ****/
+h1.imageReplace { text-indent:-1000em; overflow:hidden; background-repeat:no-repeat; display:block; margin-bottom:20px; }
+
+/**** OVERRIDE FOR RIGHT COLUMN HEADER ****/
+#columnRight h4 { font-weight:normal; }
+.tbhdrs {color:#768dc1;	text-transform: uppercase; line-height: 1em; font-size: 14px;}
+		
+/**** GLOBAL INLINE LINK STYLE ****/	
+
+
+/**** GLOBAL RULES ***/
+div.dashedRule { height:1px; width:100%; background:url(../../../../../logins/idprov/images/merck/dashed-line.gif) repeat-x; margin-top:0px; }
+div.dashedRuleNewsroom { height:1px; width:260px; background:url(../../../../../logins/idprov/images/merck/dashed-line.gif) repeat-x; }
+div.loadingContainer { position:absolute; top:0; left:0; visibility:hidden; z-index:-1000;}
+.moduleMarginTopThirtyFive { margin-top: 35px; }
+.moduleMarginBottomThirtySeven { margin-top: 37px; }
+		
+/**** CLEARFIX ****/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; } 
+.clearfix { min-height:1px; _height:1px; }
+.hidden { display: none; }
+
+/**** MAJOR STRUCTURAL STYES ****/
+.globalWrapper { margin: 0 auto; width: 975px; position: relative; text-align:left; border:0px solid black; overflow: hidden; }
+.globalWrapperRU { margin: 0 auto; min-width:350px; width: 60%;}
+
+.globalWrapperSub { margin: 0 auto; width: 975px; position: relative; text-align:left; border:0px solid black; overflow: hidden; }
+.safari .globalWrapperSub { margin: 0 auto; width: 975px; position: relative; text-align:left; border:0px solid black; overflow: hidden; }
+.chrome .globalWrapperSub { margin: 0 auto; width: 975px; position: relative; text-align:left; border:0px solid black; overflow: hidden; }
+.gecko .globalWrapperSub { margin: 0 auto; width: 975px; position: relative; text-align:left; border:0px solid black; overflow: hidden; }
+.opera .globalWrapperSub { margin: 0 auto; width: 975px; position: relative; text-align:left; border:0px solid black; overflow: hidden; }
+
+.ie .globalWrapperSubSub { margin: 0 auto; width: 975px; position: relative; text-align:left; border:0px solid black; overflow: hidden; }
+.safari .globalWrapperSubSub { margin: 0 auto; width: 975px; position: relative; text-align:left; border:0px solid black; overflow: hidden; }
+.gecko .globalWrapperSubSub { margin: 0 auto; width: 975px; position: relative; text-align:left; border:0px solid black; overflow: hidden; }
+.chrome .globalWrapperSubSub { margin: 0 auto; width: 975px; position: relative; text-align:left; border:0px solid black; overflow: hidden; }
+.opera .globalWrapperSubSub { margin: 0 auto; width: 975px; position: relative; text-align:left; border:0px solid black; overflow: hidden; }
+
+.mac.safari .globalWrapperSubSub { margin: 0 auto; width: 975px; position: relative; text-align:left; border:0px solid black; overflow: hidden; }
+.mac.safari3 .globalWrapperSubSub { margin: 0 auto; width: 975px; position: relative; text-align:left; border:0px solid black; overflow: hidden; }
+
+.contentWrapper { padding-bottom: 40px;  }
+.globalNav {}
+
+/**** CONTENT CONTAINERS ****/
+.contentContainer { text-align: left; }
+.heroContainer { position: relative; z-index: 0; margin-bottom:5px; }
+.heroContainert4pages { position: relative; z-index: 0; margin-bottom:55px; }
+
+/**** COLUMNS ****/
+#columnLeft { width:180px;  float:left; margin-right:42px; overflow:hidden; }
+#columnCenter { border:0px solid black; width:530px; float:left; margin-right:43px;  }
+#columnCenterNoLeftNav { border:0px solid black; width:730px; float:left; margin-right:43px;  }
+#columnRight { border:0px solid black; width:180px;  float:left;  }
+#NoLeftNavWorldWideContacts {border:0px solid black; width:730px; float:left; margin-right:0px;}
+
+/**** TWO COLUMN OVERRIDE ****/
+.twoCol #columnRight { display:none; }
+.twoCol #columnCenter { width: 753px; margin-right:0; } 
+.twoCol #utilButtonright { border:0px solid black; width:180px;  float:right;} 
+		
+/**** NO COLUMN OVERRIDE ****/		
+.noCol #columnCenter { width: 100%; margin-right:0; } 
+		
+/**** CONTENT IMAGES ****/
+.contentImage { margin-bottom:10px; }
+
+/**** TOP HEADER STYLES ****/
+.headerContainer { width: 100%; height: auto; z-index: 100; position: relative;}
+.headerTop { height: 50px; position:relative; padding-bottom:10px; }
+.headerTop div.logo { margin: 12px 0 0 0; width: 178px; height: 38px; float: left;}
+.headerTop ul.topNav { margin:0; padding:0;  list-style: none; display:block;  float: right; padding-top: 3px;}
+.headerTop ul.topNav li { padding: 0 3px 0 0; display: inline; float: left;  font-weight: bold; font-size: 12px;  background: transparent url(../../../../../logins/idprov/images/merck/topnav_separator-dot.gif) no-repeat right 27px; }
+.headerTop ul.topNav li.last { background: none;}
+.headerTop ul.topNav li a { margin: 0 14px; padding: 20px 7px 2px 7px; display: block; font-weight: bold; color: #289392; text-decoration: none; }
+.headerTop ul.topNav li a:hover, .headerTop ul.topNav li a.active{ color: #FFF; display: block; background: #289392 url(../../../../../logins/idprov/images/merck/topnav_active-hover.gif) repeat-x 0 bottom; }
+.headerTop .btn-worldwide { position:absolute; right:0; }
+
+/**** HERO ****/
+#hero { width: 975px; position: relative; z-index: 1;  }		
+#hero h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:150px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+#heroLargeTitle h2 {display:inline; padding:0; width:525px; margin-top: 10px; position:absolute; left:350px; top:58px; text-align: left; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent;}		
+#heroVeryLargeTitle h2 {display:inline; padding:0; width:725px; margin-top: 10px; position:absolute; left:120px; top:58px; text-align: left; font-size: 25px; padding-left: 0.3em; text-indent: 0.01em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent;}		
+.ie6	#heroMedSizeOneLine h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:150px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+	#heroMedSizeOneLine h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:250px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+.ie6	#heroMedSizeOneLineCaseOne h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:150px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+	#heroMedSizeOneLineCaseOne h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:340px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+.ie6	#heroMedSizeOneLineCaseTwo h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:150px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+	#heroMedSizeOneLineCaseTwo h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:200px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+.ie6	#heroMedSizeOneLineCaseThree h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:150px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+	#heroMedSizeOneLineCaseThree h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:270px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+.ie6	#heroMedSizeOneLineCaseFour h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:150px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+	#heroMedSizeOneLineCaseFour h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:578px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+.ie6	#heroMedSizeTwoLine h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:150px; top:58px; text-align: left; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+	#heroMedSizeTwoLine h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:150px; top:58px; text-align: left;  font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+.ie6	#heroMedSizeOneLineCaseFive h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:150px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+	#heroMedSizeOneLineCaseFive h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:325px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+.ie6	#heroMedSizeOneLineCaseSix h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:150px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+	#heroMedSizeOneLineCaseSix h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:365px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+.ie6	#heroMedSizeOneLineCaseSeven h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:150px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+	#heroMedSizeOneLineCaseSeven h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:230px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+.ie6	#heroMedSizeOneLineCaseEight h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:150px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+	#heroMedSizeOneLineCaseEight h2 { display:inline; padding:0; width:325px; margin-top: 10px; position:absolute; right:510px; top:91px; text-align: left; white-space: nowrap; font-size: 25px; padding-left: 2em; text-indent: -2em; line-height: 1.2em; letter-spacing:4px; font-weight:normal; color:#fff; background: transparent; }	
+
+/**** THESE MODIFY THE HEADER IN HERO SPACE BASED ON THE PAGE TYPE ****/
+body.t1 #hero h2 { visibility:hidden; }
+body.t3 #hero h2 { text-align:right; width:365px; top:78px; left:auto; font-size:18px; right:175px;  display:block; text-indent:0; white-space:normal; }
+body.t3 #hero h2 {}
+body.t3 #hero h2.twoline { top:66px;  }
+		
+/**** THESE MODIFY THE HEIGHT OF THE HERO SPACE ****/
+.heroContainer { min-height:56px;} /* this is default */
+body.homePage .heroContainer { height:440px; }
+body.t1 .heroContainer { height:240px; }
+body.t2 .heroContainer { height:148px; }		
+body.t3 .heroContainer { height:148px; }
+body.t4 .heroContainer { height:115px; }
+				
+/**** UTILITY BUTTONS ****/
+ul.utility-buttons { }
+ul.utility-buttons li { float:left; border: 0; }
+ul.utility-buttons li a { height: 12px; overflow:hidden; text-indent: -9999px; float: left; background-position: 0 0; background-repeat: no-repeat; }
+ul.utility-buttons li.printButton a { width: 38px; padding-left:15px; background-image: url(../../../../../logins/idprov/images/merck/btn-print.gif); }
+ul.utility-buttons li.printButton a:hover { background-image: url(../../../../../logins/idprov/images/merck/btn-print-over.gif); }
+ul.utility-buttons li.textSizeButtons a { width:14px; background: url(../../../../../logins/idprov/images/merck/btn-text-size-small-off.gif) no-repeat; }
+ul.utility-buttons li.textSizeButtons a:hover { background-image: url(../../../../../logins/idprov/images/merck/btn-text-size-small-hover.gif); }
+ul.utility-buttons li.textSizeButtonl a { width:14px; background: url(../../../../../logins/idprov/images/merck/btn-text-size-large-off.gif) no-repeat; }
+ul.utility-buttons li.textSizeButtonl a:hover { background-image: url(../../../../../logins/idprov/images/merck/btn-text-size-large-hover.gif); }
+ul.utility-buttons li.textSizeButtond { width:37px; background: url(../../../../../logins/idprov/images/merck/btn-text-size.gif) no-repeat; }
+ul.utility-buttons1 { }
+ul.utility-buttons1 li { float:left; border: 0; }
+ul.utility-buttons1 li a { height: 12px; overflow:hidden; text-indent: -9999px; float: left; background-position: 0 0; background-repeat: no-repeat; }
+ul.utility-buttons1 li.printButton a { width: 38px; padding-left:15px; background-image: url(../../../../../logins/idprov/images/merck/btn-print.gif); }
+ul.utility-buttons1 li.printButton a:hover { background-image: url(../../../../../logins/idprov/images/merck/btn-print-over.gif); }
+ul.utility-buttons1 li.shareButton a { width:51px; padding-left:15px; background: url(../../../../../logins/idprov/images/merck/btn-share.gif) no-repeat; }
+ul.utility-buttons1 li.shareButton a:hover { background-image: url(../../../../../logins/idprov/images/merck/btn-share-over.gif); }
+ul.utility-buttons1 li.textSizeButton a { width:60px; background: url(../../../../../logins/idprov/images/merck/btn-text-size-small-off.gif) no-repeat; }
+ul.utility-buttons1 li.textSizeButton a:hover { background-image: url(../../../../../logins/idprov/images/merck/btn-text-size-small-hover.gif); }
+
+/**** FOOTER ****/
+.footer1 { width: 100%; position: relative; top:40px; background-image: url(../../../../../logins/idprov/images/merck/footer-background.gif); background-repeat: no-repeat;  }
+.footer1 .searchFooter input.text { width: 165px; border: 0; color: #676767; }
+.footer1 .searchFooter input.butn { width: 10px; height: 10px; }*/
+.footer1 ul.sitemap { display: block; width: 778px; position: relative; padding-left: 120px; padding-top: 20px; padding-bottom: 20px; font-size: 10px; line-height: 1.3em;}
+.footer1 ul.sitemap li { display: block; padding-right: 25px; width: 130px; float: left; }
+.footer1 ul.sitemap li h5 { display: block; font-size: 10px; padding: 0px; margin: 0px; text-decoration:none; }
+.footer1 ul.sitemap li h5 a { text-decoration:none; color:#676767;}
+.footer1 ul.sitemap li ul li h5 a.rssPodcast { text-decoration:none; color:#676767;}
+.footer1 ul.sitemap li ul { display: block; }
+.footer1 ul.sitemap li ul li { display: block; padding: 0px; margin: 0px;}
+.footer1 ul.sitemap li ul li a { color: #676767; text-decoration: none; }
+.footer1 a:hover { text-decoration: underline !important; }
+.footer1 ul.legalnav { display: block; text-align: right; float: left; padding-bottom: 50px; }
+.footer1 ul.legalnav li { padding-left: 20px; }
+.footer1 ul.legalnav li,
+.footer1 ul.legalnav li a { display: inline; float:left; font-size: 10px; color: #676767; text-decoration: none; }
+.footer1 p.download { width: 377px; color: #676767; font-size: 10px; line-height: 1.3em; padding-bottom: 50px; }
+.footer1 p.download a { color: #676767; text-decoration: underline; }
+.footer1 ul.legalnav li.copyright {font-size:10px; color: #676767;}
+a.copyrightfooter:link { color:#999; text-decoration: none; }
+a.copyrightfooter:visited { color:#999; text-decoration: none; }
+a.copyrightfooter:hover { color:#999; text-decoration: underline; }
+
+/**** Cacheing Images For Menu Weirdness ****/
+img.cacheImg { visibility: hidden; width: 1px; height: 1px; }
+
+/**** Styles By Terry ****/
+.divOuter{
+	display:inline;
+        text-align:left;
+}
+.divInner1{
+	border: 0px solid;
+	float:left;
+        width:195px;
+        height:268px;
+        margin-left:0px;
+        margin-right:0px;
+}
+.divInner2{
+	border: 0px solid;
+	float:left;
+        width:305px;
+        height:268px;
+        margin-left:0px;
+        margin-right:0px;
+	background:url(../../../../../logins/idprov/images/merck/c-col-bg.png) repeat-x;
+}
+.divInner3{
+	border: 0px solid;
+	float:left;
+        width:27px;
+        height:268px;
+        margin-left:0px;
+        margin-right:0px;
+}
+
+.divNewsInner1{
+	border: 0px solid;
+	float:left;
+        width:405px;
+        margin-left:0px;
+        margin-right:0px;
+	color:#676767;
+	font-weight:bold;
+	margin-top:10px;
+}
+.divNewsInner2{
+	border: 0px solid;
+	float:left;
+        width:125px;
+        margin-left:0px;
+        margin-right:0px;
+	text-align:right;
+	margin-top:10px;
+}
+.divInner2{
+	border: 0px solid;
+	float:left;
+        width:305px;
+        height:268px;
+        margin-left:0px;
+        margin-right:0px;
+}
+.divInnerRole1{
+	border: 0px solid;
+	float:left;
+        width:160px;
+        height:192px;
+        margin-left:0px;
+        margin-right:22px;
+	background:url(../../../../../logins/idprov/images/merck/bg-pp-inv.png) repeat-x;
+}
+.divInnerRole2{
+	border: 0px solid;
+	float:left;
+        width:160px;
+        height:192px;
+        margin-left:0px;
+        margin-right:23px;
+	background:url(../../../../../logins/idprov/images/merck/bg-pp-cro.png) repeat-x;
+}
+.divInnerRole3{
+	border: 0px solid;
+	float:left;
+        width:160px;
+        height:192px;
+        margin-left:0px;
+        margin-right:0px;
+	background:url(../../../../../logins/idprov/images/merck/bg-pp-cmo.png) repeat-x;
+}
+.divInner1Pg{
+	border: 0px solid;
+	float:left;
+        width:250px;
+        margin-left:0px;
+        margin-right:0px;
+}
+.divInner2Pg{
+	border: 0px solid;
+	float:left;
+        width:250px;
+        margin-left:0px;
+        margin-right:0px;
+}
+.newsbox {
+	margin-top:5px;
+	margin-bottom:7px;
+	padding-left:15px;
+}
+
+.SideNavChild {
+	display:none; 
+	margin-bottom:10px;
+}
+.MRLHelpTbl {
+	border-bottom: #808080 1px solid; padding: 3px;
+}
+.MRLHelpTblHdr {
+	color:#56688C; border: #808080 1px solid; padding: 3px; background-color: #C5E8ED;
+}
+.MRLHelpTblHdrSub {
+	color:#56688C; border: #808080 1px solid; padding: 3px; background-color: #E1F2F6;
+}
+.MRLHelpTblCell {
+	border: #808080 1px solid; padding: 5px;
+}
+#LoginTbl
+{
+    	padding: 2px 2px 2px 2px;
+	font-size: 100%;
+	float: left;
+	height: 300px;
+	width: 650px;
+}
+
+#rightTable
+{
+}
+
+#AnceTblLogin
+{
+	padding: 2px 2px 2px 2px;
+	font-size: 100%;
+	float: right;
+	height: 300px;
+	width: 300px;
+	
+}
+
+#leftForm 
+{	border-right: 1px inset #7e8083;  
+	padding: 8px 13px 8px 8px;	
+	float: left;
+	width: 300px;
+	height: 240px;
+}
+
+#anceForm
+{
+	padding: 8px 13px 8px 8px;	
+	float: left;
+	height: 240px;
+	overflow-y: auto;
+	
+}
+#anceP 
+
+{
+      white-space:normal; 
+}
+
+#rightForm
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	padding: 8px 8px 8px 8px;
+	text-align:top;
+	line-height: 1.5;
+	width="300px";
+	height: 240px;
+	font-size: 100%;
+}
+
+#rightFormRU
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	padding: 8px 8px 8px 8px;
+	text-align:top;
+	line-height: 1.5;
+	font-size: 100%;
+}
+
+.leftBorder {
+    	border-left: #808080 0px solid; padding: 1px;
+	padding: 8px 8px 8px 8px;
+}
+
+
+#anceFormOtp
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	padding: 8px 8px 24px 8px;
+	height: 317px;
+	font-size: 100%;
+	
+}
+.loginsecondarypage
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:100%;
+}

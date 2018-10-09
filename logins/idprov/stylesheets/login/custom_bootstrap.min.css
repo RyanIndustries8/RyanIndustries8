@@ -1,0 +1,485 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-weight: 100;
+}
+
+wrap {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	color: rgb(20,4,1);
+}
+
+wrap header {
+	background: rgb(255,255,255);
+	width: 100%;
+	height: 70px;
+	z-index: 9;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 35px 20px;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo svg {
+	width: 200px;
+	height: auto;
+}
+
+header .dropdown a,
+header a {
+	padding-bottom: 10px !important;
+	border-bottom: 5px solid transparent;
+}
+
+header .dropdown a {
+	margin-bottom: -5px;
+}
+
+header .dropdown a:hover,
+header a {
+	margin-bottom: -10px;
+}
+
+.header_link a {
+	margin-right: 20px;
+}
+
+.dropdown a {
+	margin-right: 0;
+}
+
+.open>.dropdown-menu {
+    display: flex !important;
+    flex-direction: column;
+		border: 0px solid transparent !important;
+		box-shadow: -2px 1px 12px rgba(0,0,0,0.3) !important;
+    padding: 5px 0px !important;
+		border-radius: 1px !important;
+}
+
+header a:hover {
+	text-decoration: none;
+}
+
+.btn {
+	padding: 0 !important;
+	font-weight: 100;
+	border-radius: 0 !important;
+	border: 0px solid transparent !important;
+  line-height: normal !important;
+}
+
+container {
+	height: 100%;
+}
+
+.headerContent,
+.footerContent,
+.container {
+	display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.container {
+	height: calc(100% - 122px);
+}
+
+.headerContent,
+.footerContent {
+	width: 1200px;
+}
+
+.footerContent div {
+	display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footerContent,
+.footerContent a {
+	margin: 0 10px;
+}
+
+wrap footer {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.form-signin {
+	background: rgba(255,255,255,0.7) !important;
+	width: 750px;
+	height: 288px;
+	display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+	margin: 0 !important;
+}
+
+.form-signin input {
+	background: rgb(255,255,255);
+	color: rgb(115,114,155);
+	border: 1px solid rgb(115,114,155);
+}
+
+.form-signin input:focus,
+.form-signin input[type]:focus {
+	background: rgb(255,255,255);
+	color: rgb(0,0,0);
+  outline: 0 none;
+	transition: ease-in-out 0.4s;
+	-webkit-transition: ease-in-out 0.4s;
+}
+
+.form-signin a:hover,
+.footerContent a {
+	text-decoration: underline;
+}
+
+.footerContent,
+.footerContent a {
+	color: rgb(220,220,220);
+}
+
+.footerContent a:hover {
+	color: rgba(220,220,220,.6);
+}
+
+#LoginBtn,
+#LoginBtn:hover {
+	color: rgb(255,255,255);
+	border-color: rgba(20,4,1,0.5);
+}
+
+.header_link {
+	margin: 0 !important;
+	float: none !important;
+	vertical-align: initial !important;
+	display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.header_link a {
+	font-size: 18px;
+}
+
+.header_title {
+  text-align: center;
+  margin: auto !important;
+  vertical-align: initial !important;
+  font-size: 22pt;
+  color: #000000;
+}
+
+.container:before,
+.container:after {
+	content: none !important;
+}
+
+.advertisement {
+	max-width: 50%;
+	min-width: 440px;
+	align-self: flex-end;
+  margin-bottom: 10%;
+	background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border: 1px solid rgb(0,0,0);
+	display: flex;
+  flex-flow: column nowrap;
+	margin-top: 30px;
+}
+
+.advertisement h1 {
+	color: rgb(255,255,255) !important;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.advertisement h2 {
+	background: transparent;
+	color: rgb(255,255,255) !important;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.advertisement a {
+	color: rgb(255,255,255) !important;
+	border: 0.05em solid rgb(0,0,0);
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
+  align-self: flex-end;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.advertisement a:hover {
+    text-decoration: none;
+}
+
+.arrow {
+	display: inline-block;
+	width: 17px;
+  height: 17px;
+  border-radius: 50%;
+	margin-left: 10px;
+	position: relative;
+  top: 2px;
+}
+
+.arrow::before {
+	position: absolute;
+	content: '';
+	width: 0.4em;
+  height: 0.4em;
+  border-right: 0.175em solid rgb(255,255,255);
+  border-top: 0.175em solid rgb(255,255,255);
+  transform: rotate(45deg);
+  margin-left: 4px;
+	margin-top: 5px;
+}
+
+/* Themes */
+
+wrap.blue {
+	background: url(../../images/glass.jpg) 50%;
+	background-size: cover;
+}
+
+wrap.red {
+	background: url(../../images/brick.jpg) 50%;
+	background-size: cover;
+}
+
+wrap.purple {
+	background: url(../../images/palace.jpg) 50%;
+	background-size: cover;
+}
+
+.blue .filler {
+	fill: rgb(0,51,161);
+}
+
+.red .filler {
+	fill: rgb(220,0,0);
+}
+
+.purple .filler {
+	fill: rgb(96,76,141);
+}
+
+.blue header,
+.blue header a,
+.blue header .dropdown .btn,
+.blue header .dropdown a:hover,
+.blue .open>a,
+.blue .form-signin a {
+	color: rgb(0,51,161);
+}
+
+.red header,
+.red header a,
+.red header .dropdown .btn,
+.red header .dropdown a:hover,
+.red .open>a,
+.red .form-signin a {
+	color: rgb(220,0,0);
+}
+
+.purple header,
+.purple header a,
+.purple header .dropdown btn,
+.purple header .dropdown a:hover,
+.purple .open>a,
+.purple .form-signin a {
+	color: rgb(96,76,141);
+}
+
+.blue header a:hover {
+	border-bottom: 5px solid rgb(0,51,161) !important;
+}
+
+.red header a:hover {
+	border-bottom: 5px solid rgb(220,0,0) !important;
+}
+
+.purple header a:hover {
+	border-bottom: 5px solid rgb(96,76,141) !important;
+}
+
+.blue .form-signin input:focus,
+.blue .form-signin input[type]:focus {
+	border-color: rgba(0,51,161, 0.8);
+  box-shadow: 0 1px 1px rgba(0,51,161, 0.075) inset,
+					  0 0 8px rgba(0,51,161,0.6);
+}
+
+.red .form-signin input:focus,
+.red .form-signin input[type]:focus {
+	border-color: rgba(220,0,0, 0.8);
+  box-shadow: 0 1px 1px rgba(220,0,0, 0.075) inset,
+					  0 0 8px rgba(220,0,0,0.6);
+}
+
+.purple .form-signin input:focus,
+.purple .form-signin input[type]:focus {
+	border-color: rgba(96,76,141, 0.8);
+  box-shadow: 0 1px 1px rgba(96,76,141, 0.075) inset,
+					  0 0 8px rgba(96,76,141, 0.6);
+}
+
+.blue .dropdown-item:hover,
+.blue .advertisement a,
+.blue #LoginBtn {
+	background: linear-gradient(rgb(15,157,236),
+							rgb(2,38,116)) !important;
+}
+
+.red .dropdown-item:hover,
+.red .advertisement a,
+.red #LoginBtn {
+	background: linear-gradient(rgb(250,40,40),
+							rgb(122,0,0)) !important;
+}
+
+.purple .dropdown-item:hover,
+.purple .advertisement a,
+.purple #LoginBtn {
+	background: linear-gradient(rgb(117,93,170),
+							rgb(50,39,73)) !important;
+}
+
+.blue .advertisement a:hover,
+.blue #LoginBtn:hover {
+	background: linear-gradient(rgb(2,38,116),
+							rgb(15,157,236)) !important;
+}
+
+.red .advertisement a:hover,
+.red #LoginBtn:hover {
+	background: linear-gradient(rgb(122,0,0),
+							rgb(250,40,40)) !important;
+}
+
+.purple .advertisement a:hover,
+.purple #LoginBtn:hover {
+	background: linear-gradient(rgb(50,39,73),
+							rgb(117,93,170)) !important;
+}
+
+.blue .advertisement a:active,
+.blue #LoginBtn:active {
+	background: rgb(15,157,236) !important;
+}
+
+.red .advertisement a:active,
+.red #LoginBtn:active {
+	background: rgb(250,40,40) !important;
+}
+
+.purple .advertisement a:active
+.purple #LoginBtn:active {
+	background: rgb(117,93,170) !important;
+}
+
+.blue .advertisement .arrow {
+	background: linear-gradient(rgba(0,0,0,0.7), transparent),
+							rgb(15,157,236);
+}
+
+.red .advertisement .arrow {
+	background: linear-gradient(rgba(0,0,0,0.7), transparent),
+							rgb(255,0,0);
+}
+
+.purple .advertisement .arrow {
+	background: linear-gradient(rgba(0,0,0,0.7), transparent),
+							rgb(117,93,170);
+}
+
+header a.dropdown-item,
+header a.dropdown-item:hover {
+	border-bottom: none !important;
+	margin: 0px;
+	padding: 10px 5px !important;
+}
+
+header a.dropdown-item:hover {
+	color: rgb(255,255,255) !important;
+}
+
+@media only screen and (min-width:650px) and (max-width:992px),
+only screen and (min-device-width:650px) and (max-device-width:992px) {
+
+	.advertisement {
+		max-width: 75%;
+	}
+
+}
+
+@media only screen and (min-width:0px) and (max-width:650px),
+only screen and (min-device-width:0px) and (max-device-width:650px) {
+
+	.dropdown {
+    margin-top: 11px;
+	}
+
+	a.mobile-hide,
+	.advertisement {
+		display: none !important;
+		visibility: collapse !important;
+	}
+
+	.headerContent {
+		justify-content: space-around !important;
+		align-items: center;
+	}
+
+	.header_title {
+		margin: 0 !important;
+	}
+
+	.container {
+		width: 100%;
+	  height: calc(100% - 150px);
+		margin: 0;
+		padding: 0;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+		align-items: center;
+	}
+
+	footer {
+		margin-bottom: 25px;
+	}
+
+	.footerContent {
+    display: flex;
+    flex-flow: column !important;
+    align-items: center;
+	}
+
+}
+
+
+@media ( max-width :1024px) {
+
+	.mobile-hide {
+		display: block !important;
+	}
+
+}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+.valid {
+	color: #83CE40 !important;
+}
+
+.pwdError {
+	color: #bababa;
+}
+
+.popover-message {
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+.title {
+	margin: 15px 0 4px 0;
+}

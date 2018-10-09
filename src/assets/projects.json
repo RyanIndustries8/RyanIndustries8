@@ -1,0 +1,139 @@
+[
+  {
+    "id": 1,
+    "label": "Megakyle83",
+    "sublabel": "Marketing, Portfolio, 3D Modling",
+    "company": "Freelance",
+    "sample": "/assets/img/megakyle83home.png",
+    "img": [
+      {"render": "/assets/img/megakyle83home.png"},
+      {"render": "/assets/img/megakyle83Menu.png"},
+      {"render": "/assets/img/megakyle83Work.png"}
+    ],
+    "about": "Megakyle83 is a fantastic 3D modeler and this sites simplicity showcases the art with a subtle touch of scrolling effects.",
+    "responsive": "Yes",
+    "tools": "HTML5, CSS, JavaScript",
+    "library": "Angular, jQuery, ScrollMagic, GreenSock",
+    "link": "Megakyle83.com",
+    "url": "http://megakyle83.com/"
+  },
+  {
+    "id": 2,
+    "label": "Bioshock Inspired CSS Graphics",
+    "sublabel": "Marketing, CSS Graphics",
+    "company": "Freelance",
+    "sample": "/assets/img/css3.png",
+    "img": [
+      {"render": "/assets/img/css3.png"},
+      {"render": "/assets/img/css1.png"},
+      {"render": "/assets/img/css2.png"}
+    ],
+    "about": "It all started with the idea for a neon sign and became a new possibility for the future of the web. Each of these designs were taken from models featured in the first Bioshock game and completely built out using HTML, CSS, and jQuery",
+    "responsive": "No",
+    "tools": "HTML5, CSS, JavaScript",
+    "library": "jQuery",
+    "link": "Bioshock Redesigned",
+    "url": "http://ryanindustries8.com/CSSGraphics/index.html"
+  },
+  {
+    "id": 3,
+    "label": "Hero Image Login for Multiple Themes",
+    "sublabel": "Prototype, Case Study",
+    "company": "Sila SG",
+    "sample": "/assets/img/blueTemplate.png",
+    "img": [
+      {"render": "/assets/img/blueTemplate.png"},
+      {"render": "/assets/img/redTemplate.png"},
+      {"render": "/assets/img/purpleTemplate.png"}
+      ],
+      "about": "This prototype was used as a case study to determine how a modernized hero image login screen could be simply coded to accomedate multiple themes/companies in one page. The key to the dessign was the one class change at the top of the page that would determine the display of the theme.",
+      "responsive": "Yes",
+      "tools": "HTML5, CSS",
+      "library": "none",
+      "link": "Theme Demo",
+      "url": "http://ryanindustries8.com/logins/index.html"
+  },
+  {
+    "id": 6,
+    "label": "Portal Themed Demo",
+    "sublabel": "Prototype, Case Study",
+    "company": "Sila SG",
+    "sample": "/assets/img/portal.png",
+    "img": [
+      {"render": "/assets/img/portal.png"},
+      {"render": "/assets/img/portalBtm.png"}
+      ],
+      "about": "This prototype was used as a case study to show the benefits of responsive design and to also demonstrate, through the use of media queries, that responsive changes can be coded quickly to save time and money.",
+      "responsive": "Yes",
+      "tools": "HTML5, CSS",
+      "library": "none",
+      "link": "PortalDemo",
+      "url": "http://ryanindustries8.com/portaldemo"
+  },
+  {
+    "id": 11,
+    "label": "SEO Blocks",
+    "sublabel": "Graphics",
+    "company": "Freelance",
+    "sample": "/assets/img/cubes.png",
+    "img": [
+      {"render": "/assets/img/cubes.png"}
+    ],
+    "about": "Featuring some of the top search engines, this graphic was designed using the power of Photoshop.",
+    "responsive": "No",
+    "tools": "Photoshop",
+    "library": "None",
+    "link": ""
+  },
+  {
+    "id": 12,
+    "label": "DJ",
+    "sublabel": "Graphics",
+    "company": "Freelance",
+    "sample": "/assets/img/alien.jpg",
+    "img": [
+      {"render": "/assets/img/alien.jpg"}
+    ],
+    "about": "This simple graphic was brought to me as a rough sketch and I cleaned it up using the pen tool in Illustrator.",
+    "responsive": "No",
+    "tools": "Illustrator",
+    "library": "None",
+    "link": ""
+  },
+  {
+    "id": 13,
+    "label": "Floating Tree",
+    "sublabel": "Graphics",
+    "company": "Freelance",
+    "sample": "/assets/img/dreams.png",
+    "img": [
+      {"render": "/assets/img/dreams.png"},
+      {"render": "/assets/img/tree1.png"},
+      {"render": "/assets/img/tree.png"}
+    ],
+    "about": "Inspired by the beautiful scenes from the movie The Fountain, this design was used as the backdrop of my portfolio for several years while I freelanced.",
+    "responsive": "No",
+    "tools": "Photoshop",
+    "library": "None",
+    "link": ""
+  },
+  {
+    "id": 14,
+    "label": "Line Art Graphics",
+    "sublabel": "Graphics",
+    "company": "Freelance",
+    "sample": "/assets/img/saturn.jpg",
+    "img": [
+      {"render": "/assets/img/saturn.jpg"},
+      {"render": "/assets/img/heels2.png"},
+      {"render": "/assets/img/chessKnight2.png"},
+      {"render": "/assets/img/lightbulb.png"},
+      {"render": "/assets/img/teacup.png"}
+    ],
+    "about": "A series of graphics using custom set brush in Photoshop",
+    "responsive": "No",
+    "tools": "Photoshop",
+    "library": "None",
+    "link": ""
+  }
+]

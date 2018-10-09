@@ -1,0 +1,30 @@
+[
+  {
+    "type": "COMMUNITY INVOLVEMENT",
+    "info": [
+      {
+        "group": "Toastmasters"
+      },
+      {
+        "group": "Women Who Code"
+      }
+    ]
+  },
+  {
+    "type": "SPEAKING EVENTS",
+    "info": [
+      {
+        "group": "Smashing Conf Jam Session",
+        "talk": "Intro and Demo of CSS Graphic - Neon Sign",
+        "location": "New York",
+        "year": "2016"
+      },
+      {
+        "group": "Smashing Conf Jam Session",
+        "talk": "Advanced CSS Graphic - Pneumo",
+        "location": "San Francisco",
+        "year": "2017"
+      }
+    ]
+  }
+]

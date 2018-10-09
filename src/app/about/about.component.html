@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div class="mainBlock">
+
+  <div class="titleBar">
+    <h1>{{title}}</h1>
+  </div>
+  <div class="aboutHero"></div>
+  <div class="centeredStatement">
+    <div class="flexRow">
+    <div *ngFor="let new of aboutContent">
+    <p *ngFor="let subitem of new['statement']">{{subitem.para}}</p>
+  </div>
+  <img *ngFor="let new of aboutContent" class="profile" src={{new.profile}} />
+</div>
+  </div>
+    <div class="flexRow">
+
+<div class="basicFlexColumn">
+          <div *ngFor="let doc of aboutRec">
+          <ul>
+            <li><h5>{{doc.event}}</h5></li>
+            <li class="basicFlexColumn"><img class="CIimg" src={{doc.img}} /><span>{{doc.info}}</span></li>
+          </ul>
+        </div>
+</div>
+<div class="basicFlexRow">
+        <div *ngFor="let doc of aboutSkill" >
+        <ul>
+          <li><h5>{{doc.title}}</h5></li>
+        <ul *ngFor="let subitem of doc['skills']">
+          <li>{{subitem.prog}}</li>
+          <li><a target="_blank" href={{subitem.link}}>{{subitem.type}}</a></li>
+        </ul>
+      </ul>
+    </div>
+</div>
+
+    </div>
+</div>

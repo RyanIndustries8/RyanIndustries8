@@ -1,0 +1,56 @@
+[
+  {
+    "title": "CORE",
+    "skills": [
+      {"prog": "HTML"},
+      {"prog": "CSS"},
+      {"prog": "JavaScript"},
+      {"prog": "PHP"},
+      {"prog": "Atom"},
+      {"prog": "Photoshop"},
+      {"prog": "Illustrator"},
+      {"prog": "Sketch"},
+      {"prog": "VersionOne"},
+      {"prog": "MeisterTask"},
+      {"prog": "Dreamweaver"}
+    ]
+  },
+  {
+    "title": "LIBRARIES",
+    "skills": [
+      {"prog": "jQuery"},
+      {"prog": "jQueryUI"},
+      {"prog": "Angular"},
+      {"prog": "AngularJS"},
+      {"prog": "Bootstrap"},
+      {"prog": "Material Design"},
+      {"prog": "Node.JS"},
+      {"prog": "GreenSock"},
+      {"prog": "D3"},
+      {"prog": "PrimeFaces"}
+    ]
+  },
+  {
+    "title": "COMPETENCIES",
+    "skills": [
+      {"prog": "Responsive Design"},
+      {"prog": "Cross-Browser Styling and Testing"},
+      {"prog": "Mobile First Development"},
+      {"prog": "Search Engine Optimization"},
+      {"prog": "User Experience Design"},
+      {"prog": "Visual Design"},
+      {"prog": "Browser Anmation"},
+      {"prog": "WebGL"},
+      {"prog": "CSS Graphics"}
+    ]
+  },
+  {
+    "title": "RESUME",
+    "skills": [
+      {"link": "https://drive.google.com/open?id=1l32N4Bfgnc9RWZ4K5Z1uQMlHLSJU7wZN",
+        "type": "PDF"},
+      {"link": "https://drive.google.com/open?id=1CTdkIos4AZBTEZKcSrEJI7ko6ngSbzDAm8kTGRY4nMI",
+        "type": "DOCX"}
+    ]
+  }
+]

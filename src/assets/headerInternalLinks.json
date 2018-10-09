@@ -1,0 +1,18 @@
+[
+  {
+    "link": "/",
+    "pgTitle": "HOME"
+  },
+  {
+    "link": "/work",
+    "pgTitle": "PROJECTS"
+  },
+  {
+    "link": "/about",
+    "pgTitle": "ABOUT"
+  },
+  {
+    "link": "/contact",
+    "pgTitle": "CONTACT"
+  }
+]
