@@ -1,6 +1,6 @@
 <app-header></app-header>
 <!-- Intro -->
-<nav class="homeNav" id="pinned-nav">
+<nav class="homeNav" id="pinned-nav" style="display: none;">
 	<ul>
 		<li><a class="easyScroll home" id="one" href="#home"><div class="circle"></div><div class="hideme"> Home</div></a></li>
 		<li><a class="easyScroll about" id="two" href="#about"><div class="circle"></div><div class="hideme"> About</div></a></li>
@@ -10,7 +10,7 @@
 </nav>
 <div id="pinned-trigger1"></div>
 <div class="stripes" id="pinned-element1"></div>
-<div class="aboveFold" id="home">
+<div class="aboveFold" id="home" class="home">
 	<div class="signBlock" id="RyanIndustries8">
 		<div class="signInvis">
 		<div class="sign">
@@ -50,11 +50,11 @@
 			<div class="lg2 cogE"><app-lgcog></app-lgcog></div>
 		</div>
 	</div>
-		<a class="introBtn easyScroll" href="#about">EXPLORE
-			<div class="arrowBox">
-				<div class="exploreArrow"></div>
-			</div>
-		</a>
+	<a class="introBtn easyScroll" href="#about">explore
+		<div class="arrowBox">
+			<div class="exploreArrow"></div>
+		</div>
+	</a>
 	</div>
 </div>
 <!-- WHO -->
@@ -111,7 +111,7 @@
 				<div class="rivet rivetL"></div>
 			</div>
 			<div class="innerSign">
-				<div class="innerLabel aboutMe">I'm Jenni, a web designer and developer with a passion for the web, graphic design, and photography. Most of all I love CSS, creating interactive art, and pushing the boundaries of art on the web.<a class="signbtn" [routerLink]="['/about']">Get to know me</a></div>
+				<div class="innerLabel aboutMe">I'm Jennifer, a web designer and developer with a passion for the web, graphic design, and photography. Most of all I love CSS, creating interactive art, and pushing the boundaries of art on the web. <span class="signbtn" [routerLink]="['/about']">Get to know me</span>.</div>
 			</div>
 		</div>
 	</div>
@@ -126,31 +126,31 @@
 
 
 <div class="aboveFold pgCenter" id="port">
-	<div class="rivetsTopFull">
+	<div class="rivetsTop">
 		<div class="rivet rivetT"></div>
 		<div class="rivet rivetT"></div>
 		<div class="rivet rivetT"></div>
 		<div class="rivet rivetT"></div>
 		<div class="rivet rivetT"></div>
 	</div>
-	<div class="rivetsRightFull">
+	<div class="rivetsRight">
 		<div class="rivet rivetR"></div>
 	</div>
-	<div class="rivetsLeftFull">
+	<div class="rivetsLeft">
 		<div class="rivet rivetL"></div>
 	</div>
 	<div class="tvScreen">
 		<div class="screenLine"></div>
-		<h1>What I Do</h1>
-		<div class="grid">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
+		<div class="portHeader">
+			<h1>What I Do</h1>
 		</div>
-		<div class="startBtn">Learn More</div>
+
+		<div class="grid">
+			<app-sitedemo></app-sitedemo>
+		</div>
+		<div class="startBtn" [routerLink]="['/work']">Learn More</div>
 	</div>
-	<div class="rivetsBottomFull">
+	<div class="rivetsBottom">
 		<div class="rivet rivetB"></div>
 		<div class="rivet rivetB"></div>
 		<div class="rivet rivetB"></div>
@@ -160,26 +160,32 @@
 </div>
 <div id="blank">
 	<div id="lgcog" class="blankLeftTop"><app-lgcog></app-lgcog></div>
-	<div id="smcog" class="blankSmLeftTop"><app-smcog></app-smcog></div>
 </div>
 <div class="contact stack">
+	<div class="stripes"></div>
 	<div class="lg2 contactRightBtm"><app-lgcog></app-lgcog></div>
 	<div></div>
-	<div class="telegraph">
+	<div class="telegraph perspec">
 		<div class="telegramHeader">
 			<div class="teleLabel">
 				<div class="postL">POST</div>
-				<img class="teleLogo" src={{logo}} />
+				<div class="teleLogo">
+					<app-logo></app-logo>
+					</div>
 				<div class="postR">OFFICE</div>
 			</div>
 			<h3>Telegram</h3>
 			<h4>Official Connection Invitation</h4>
 		</div>
 		<div class="teleContent">
-			<h1>jen.byron83@gmail.com</h1>
+			<a href="mailto:jen.byron83@gmail.com"><h1>jen.byron83@gmail.com</h1></a>
 			<h1>(509)301-5601</h1>
 		</div>
-		<app-socialmedia></app-socialmedia>
+		<div class="social">
+		  <div class="smBlock" >
+		    <a class="icon" *ngFor="let social of sm" target="_blank" href={{social.site}}><img [src]="social.icon" /><span class="platform">{{social.platform}}</span></a>
+		  </div>
+	  </div>
 	</div>
 <div></div>
 </div>

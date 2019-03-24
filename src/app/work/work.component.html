@@ -1,13 +1,43 @@
 <app-header></app-header>
+<div class="stripes"></div>
 <div class="workContainer">
-  <app-socialmedia></app-socialmedia>
   <h1>{{ title }}</h1>
 
-  <div class="grid">
-    <a class="grid-item" *ngFor="let model of projects" [routerLink]="['/model', model.id]"
-      [ngStyle]="{'background': 'url('+ model.sample +') center center',
-                  'backgroundSize': 'cover'}" >
-      <div class="tag" (hover)="toggle()"><h2>{{ model.label }}</h2><h4>{{ model.sublabel }}</h4></div>
-    </a>
+    <div class="projectContainer">
+      <div class="lg2 cogTL"><app-lgcog></app-lgcog></div>
+      <div class="lg2r cogBR"><app-lgcog></app-lgcog></div>
+      <div class="gridBorder">
+        <div class="rivetsTop">
+          <div class="rivet rivetT"></div>
+          <div class="rivet rivetT"></div>
+          <div class="rivet rivetT"></div>
+          <div class="rivet rivetT"></div>
+          <div class="rivet rivetT"></div>
+        </div>
+        <div class="rivetsRight">
+          <div class="rivet rivetR"></div>
+          <div class="rivet rivetR"></div>
+          <div class="rivet rivetR"></div>
+        </div>
+        <div class="rivetsBottom">
+          <div class="rivet rivetB"></div>
+          <div class="rivet rivetB"></div>
+          <div class="rivet rivetB"></div>
+          <div class="rivet rivetB"></div>
+          <div class="rivet rivetB"></div>
+        </div>
+        <div class="rivetsLeft">
+          <div class="rivet rivetL"></div>
+          <div class="rivet rivetL"></div>
+          <div class="rivet rivetL"></div>
+        </div>
+        <div class="grid">
+          <a class="grid-item" *ngFor="let model of projects" [routerLink]="['/model', model.id]"
+            [ngStyle]="{'background': 'url('+ model.sample +') top center no-repeat',
+                        'backgroundSize': 'cover'}" >
+            <div class="tag" (hover)="toggle()"><h2>{{ model.label }}</h2><h4>{{ model.sublabel }}</h4></div>
+          </a>
+        </div>
+    </div>
   </div>
 </div>

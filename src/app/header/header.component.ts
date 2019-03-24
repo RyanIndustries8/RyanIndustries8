@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { LocationStrategy } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import * as $ from 'jquery';
 
-declare var $:any;
+declare var $: any;
 
 @Component({
   selector: 'app-header',
@@ -14,59 +15,71 @@ declare var $:any;
 
 export class HeaderComponent implements OnInit {
   title = 'RyanIndustries8';
-  logo = './assets/icons/logo.png'
-  contactMe: string;
-  socialmedia: any;
-  linkingPgs: object;
+  logo = './assets/icons/logo.png';
+  linkingPgs: any;
+  isPopState = false;
 
 
-  constructor(private http: HttpClient, private router: Router, public sanitizer: DomSanitizer ) {
+  constructor(private http: HttpClient,
+              private router: Router,
+              public sanitizer: DomSanitizer,
+              private locStrat: LocationStrategy) {
     this.sanitizer = sanitizer;
   }
 
-  public ngOnInit(): void
-    {
+  public ngOnInit(): void {
+      this.locStrat.onPopState(() => {
+      this.isPopState = true;
+    });
 
-      $(window).scroll(function(){
-        let offset = $(window).scrollTop();
+    this.router.events.subscribe(event => {
+    // Scroll to top if accessing a page, not via browser history stack
+    if (event instanceof NavigationEnd && !this.isPopState) {
+      window.scrollTo(0, 0);
+      this.isPopState = false;
+    }
 
-        if (offset > 550) {
+  // Ensures that isPopState is reset
+  if (event instanceof NavigationEnd) {
+      this.isPopState = false;
+    }
 
-          $('#navLogo').css({'margin-top':'0','transition':'all 1s','opacity':'1'});
-        } else {
-          $('#navLogo').css({'margin-top':'-50px','transition':'all 1s','opacity':'0'});
-        }
-      })
+  });
 
-      $(document).ready(function(){
-        // $("#gears").get(0).play();
-        $("menu").hide();
+  $(document).ready(function() {
+  // $("#gears").get(0).play();
 
-        $("#menuIcon").on('click', function(){
-          // $("#menuIcon").toggleClass('rotate');
-          // $("menu").toggle('size', { origin: ["top", "right"] }, 1000);
-          // $(".name").animate({
-          //   width: "toggle"
-          // });
-          $("menu").slideToggle(500);
-        });
+  $('#menuIcon').on('click', function() {
+    $('menu').toggleClass('wakeme');
+    // $('body').toggleClass('noScroll');
+  });
 
-      });
+  $('a').on('click', function() {
+    // $('body').removeClass('noScroll');
+    $('menu').removeClass('wakeme');
+  });
 
-      this.http.get<any>('./assets/contactMe.json').subscribe(
-        data => {
-          this.contactMe = data;
-        })
+  $('.name').hide();
+  // Logo Text Rollover
+  $('#navLogo').hover(function() {
+    $('.name').toggle('slide', {
+      direction: 'left'
+    }, 1000);
+  });
 
-      this.http.get<any>('./assets/socialMedia.json').subscribe(
-        data => {
-          this.socialmedia = data;
-        })
+  $('#menuIcon').click(function() {
+    $('#menuIcon').toggleClass('rotate');
+    $('.bar:first-child').toggleClass('rotateL');
+    $('.bar:nth-child(2)').toggleClass('slick');
+    $('.bar:last-child').toggleClass('rotateR');
+});
 
-      this.http.get<any>('./assets/headerInternalLinks.json').subscribe(
-        data => {
-          this.linkingPgs = data;
-        })
+  });
+
+  this.http.get<any>('./assets/headerInternalLinks.json').subscribe(
+  data => {
+    this.linkingPgs = data;
+  });
     }
 
 }

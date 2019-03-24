@@ -1,139 +1,186 @@
 [
   {
-    "id": 1,
-    "label": "Megakyle83",
-    "sublabel": "Marketing, Portfolio, 3D Modling",
+    "id": 0,
+    "label": "MegaKyle83",
+    "sublabel": "Portfolio",
     "company": "Freelance",
-    "sample": "/assets/img/megakyle83home.png",
+    "sample": "/assets/img/megakyle83FullSite.png",
+    "heroimg": "/assets/img/megakyle83hero.png",
+    "show": true,
     "img": [
       {"render": "/assets/img/megakyle83home.png"},
       {"render": "/assets/img/megakyle83Menu.png"},
       {"render": "/assets/img/megakyle83Work.png"}
     ],
     "about": "Megakyle83 is a fantastic 3D modeler and this sites simplicity showcases the art with a subtle touch of scrolling effects.",
-    "responsive": "Yes",
-    "tools": "HTML5, CSS, JavaScript",
-    "library": "Angular, jQuery, ScrollMagic, GreenSock",
-    "link": "Megakyle83.com",
-    "url": "http://megakyle83.com/"
+    "tools": [
+      {"tool": "HTML5"},
+      {"tool": "CSS"},
+      {"tool": "JavaScript"},
+      {"tool": "Angular"},
+      {"tool": "jQuery"},
+      {"tool": "ScrollMagic"},
+      {"tool": "GreenSock"}
+    ],
+    "link": "Megakyle83.com"
   },
   {
-    "id": 2,
-    "label": "Bioshock Inspired CSS Graphics",
-    "sublabel": "Marketing, CSS Graphics",
+    "id": 1,
+    "label": "CSS Graphics",
+    "sublabel": "Concepts",
     "company": "Freelance",
-    "sample": "/assets/img/css3.png",
+    "sample": "/assets/img/CSSgraphicsFullSite.png",
+    "heroimg": "/assets/img/csshero.png",
+    "show": true,
     "img": [
       {"render": "/assets/img/css3.png"},
       {"render": "/assets/img/css1.png"},
       {"render": "/assets/img/css2.png"}
     ],
     "about": "It all started with the idea for a neon sign and became a new possibility for the future of the web. Each of these designs were taken from models featured in the first Bioshock game and completely built out using HTML, CSS, and jQuery",
-    "responsive": "No",
-    "tools": "HTML5, CSS, JavaScript",
-    "library": "jQuery",
+    "tools": [
+      {"tool": "HTML5"},
+      {"tool": "CSS"},
+      {"tool": "JavaScript"},
+      {"tool": "jQuery"},
+      {"tool": "ScrollMagic"}
+    ],
     "link": "Bioshock Redesigned",
     "url": "http://ryanindustries8.com/CSSGraphics/index.html"
   },
   {
-    "id": 3,
-    "label": "Hero Image Login for Multiple Themes",
+    "id": 2,
+    "label": "Themeing",
     "sublabel": "Prototype, Case Study",
     "company": "Sila SG",
     "sample": "/assets/img/blueTemplate.png",
+    "heroimg": "/assets/img/loginhero.png",
+    "show": true,
     "img": [
       {"render": "/assets/img/blueTemplate.png"},
       {"render": "/assets/img/redTemplate.png"},
       {"render": "/assets/img/purpleTemplate.png"}
       ],
       "about": "This prototype was used as a case study to determine how a modernized hero image login screen could be simply coded to accomedate multiple themes/companies in one page. The key to the dessign was the one class change at the top of the page that would determine the display of the theme.",
-      "responsive": "Yes",
-      "tools": "HTML5, CSS",
-      "library": "none",
+      "tools": [
+        {"tool": "HTML5"},
+        {"tool": "CSS"}
+      ],
       "link": "Theme Demo",
       "url": "http://ryanindustries8.com/logins/index.html"
   },
   {
-    "id": 6,
-    "label": "Portal Themed Demo",
+    "id": 3,
+    "label": "Responsive Layout",
     "sublabel": "Prototype, Case Study",
     "company": "Sila SG",
-    "sample": "/assets/img/portal.png",
+    "sample": "/assets/img/PortalFullSite.png",
+    "heroimg": "/assets/img/portalhero.png",
+    "show": true,
     "img": [
       {"render": "/assets/img/portal.png"},
       {"render": "/assets/img/portalBtm.png"}
       ],
       "about": "This prototype was used as a case study to show the benefits of responsive design and to also demonstrate, through the use of media queries, that responsive changes can be coded quickly to save time and money.",
-      "responsive": "Yes",
-      "tools": "HTML5, CSS",
-      "library": "none",
+      "tools": [
+        {"tool": "HTML5"},
+        {"tool": "CSS"}
+      ],
       "link": "PortalDemo",
       "url": "http://ryanindustries8.com/portaldemo"
   },
   {
-    "id": 11,
-    "label": "SEO Blocks",
+    "id": 4,
+    "label": "Pouring of Worlds",
     "sublabel": "Graphics",
     "company": "Freelance",
-    "sample": "/assets/img/cubes.png",
+    "sample": "/assets/img/teapotCenter.png",
+    "heroimg": "/assets/img/teapotCenter.png",
+    "show": true,
     "img": [
-      {"render": "/assets/img/cubes.png"}
+      {"render": "/assets/img/teapot_Final.png"}
     ],
-    "about": "Featuring some of the top search engines, this graphic was designed using the power of Photoshop.",
-    "responsive": "No",
-    "tools": "Photoshop",
-    "library": "None",
-    "link": ""
+    "about": "Fantasy design of planets as a tea set pouring water. Created in Photoshop.",
+    "tools": [
+      {"tool": "Photoshop"}
+    ],
+    "link": "https://www.behance.net/gallery/76086133/Pouring-of-Worlds"
   },
   {
-    "id": 12,
-    "label": "DJ",
-    "sublabel": "Graphics",
-    "company": "Freelance",
-    "sample": "/assets/img/alien.jpg",
-    "img": [
-      {"render": "/assets/img/alien.jpg"}
-    ],
-    "about": "This simple graphic was brought to me as a rough sketch and I cleaned it up using the pen tool in Illustrator.",
-    "responsive": "No",
-    "tools": "Illustrator",
-    "library": "None",
-    "link": ""
-  },
-  {
-    "id": 13,
-    "label": "Floating Tree",
+    "id": 6,
+    "label": "Dreams",
     "sublabel": "Graphics",
     "company": "Freelance",
     "sample": "/assets/img/dreams.png",
+    "heroimg": "/assets/img/dreams.png",
+    "show": true,
     "img": [
-      {"render": "/assets/img/dreams.png"},
-      {"render": "/assets/img/tree1.png"},
-      {"render": "/assets/img/tree.png"}
+      {"render": "/assets/img/dreams.png"}
     ],
-    "about": "Inspired by the beautiful scenes from the movie The Fountain, this design was used as the backdrop of my portfolio for several years while I freelanced.",
-    "responsive": "No",
-    "tools": "Photoshop",
-    "library": "None",
-    "link": ""
+    "about": "Inspired by the film The Fountain, this floating tree is wrapped by drips of dreams coming from the vast universe.",
+    "tools": [
+      {"tool": "Photoshop"}
+    ],
+    "link": "https://www.behance.net/gallery/77284075/Dreams"
   },
   {
-    "id": 14,
-    "label": "Line Art Graphics",
-    "sublabel": "Graphics",
+    "id": 7,
+    "label": "Christmas Candles",
+    "sublabel": "CSS Graphics",
     "company": "Freelance",
-    "sample": "/assets/img/saturn.jpg",
+    "sample": "/assets/img/animatedCSSCandles.png",
+    "heroimg": "/assets/img/animatedCSSCandles.png",
+    "show": true,
     "img": [
-      {"render": "/assets/img/saturn.jpg"},
-      {"render": "/assets/img/heels2.png"},
-      {"render": "/assets/img/chessKnight2.png"},
-      {"render": "/assets/img/lightbulb.png"},
-      {"render": "/assets/img/teacup.png"}
+      {"render": "/assets/img/animatedCSSCandles.png"}
     ],
-    "about": "A series of graphics using custom set brush in Photoshop",
-    "responsive": "No",
-    "tools": "Photoshop",
-    "library": "None",
-    "link": ""
+    "about": "Inspired by the film The Fountain, this floating tree is wrapped by drips of dreams coming from the vast universe.",
+    "tools": [
+      {"tool": "Atom Text Editor"},
+      {"tool": "CSS"},
+      {"tool": "HTML"},
+      {"tool": "Animation"}
+    ],
+    "link": "https://codepen.io/ryanindustries8/full/YdpRbv"
+  },
+  {
+    "id": 8,
+    "label": "Digital Sign",
+    "sublabel": "Concepts",
+    "company": "Freelance",
+    "sample": "/assets/img/scifiSign.png",
+    "heroimg": "/assets/img/scifiSign.png",
+    "show": true,
+    "img": [
+      {"render": "/assets/img/scifiSign.png"}
+    ],
+    "about": "CSS animated display with links for web site.",
+    "tools": [
+      {"tool": "CodePen"},
+      {"tool": "HTML"},
+      {"tool": "CSS"},
+      {"tool": "JavaScript"},
+      {"tool": "Animation"}
+    ],
+    "link": "https://codepen.io/ryanindustries8/full/BbQJpG"
+  },
+  {
+    "id": 9,
+    "label": "Theater Lights",
+    "sublabel": "CSS Graphics",
+    "company": "Freelance",
+    "sample": "/assets/img/singleLight.png",
+    "heroimg": "/assets/img/TheaterLights.png",
+    "show": true,
+    "img": [
+      {"render": "/assets/img/TheaterLights.png"}
+    ],
+    "about": "CSS animated display with links for web site.",
+    "tools": [
+      {"tool": "CodePen"},
+      {"tool": "HTML"},
+      {"tool": "CSS"}
+    ],
+    "link": "https://codepen.io/ryanindustries8/full/oEpEaZ"
   }
 ]

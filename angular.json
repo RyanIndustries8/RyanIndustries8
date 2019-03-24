@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "megakyle83": {
+    "RyanIndustries8": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -56,18 +56,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "megakyle83:build"
+            "browserTarget": "RyanIndustries8:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "megakyle83:build:production"
+              "browserTarget": "RyanIndustries8:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "megakyle83:build"
+            "browserTarget": "RyanIndustries8:build"
           }
         },
         "test": {
@@ -108,7 +108,7 @@
         }
       }
     },
-    "megakyle83-e2e": {
+    "RyanIndustries8-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -117,7 +117,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "megakyle83:serve"
+            "devServerTarget": "RyanIndustries8:serve"
           }
         },
         "lint": {
@@ -134,7 +134,7 @@
       }
     }
   },
-  "defaultProject": "megakyle83",
+  "defaultProject": "RyanIndustries8",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
+import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -15,7 +16,9 @@ import { ContactComponent } from './contact/contact.component';
 import { LgcogComponent } from './lgcog/lgcog.component';
 import { SmcogComponent } from './smcog/smcog.component';
 import { MdcogComponent } from './mdcog/mdcog.component';
-import { socialmediaComponent } from './socialmedia/socialmedia.component';
+import { SitedemoComponent } from './sitedemo/sitedemo.component';
+import { SmComponent } from './sm/sm.component';
+import { LogoComponent } from './logo/logo.component';
 
 
 @NgModule({
@@ -31,7 +34,9 @@ import { socialmediaComponent } from './socialmedia/socialmedia.component';
     LgcogComponent,
     SmcogComponent,
     MdcogComponent,
-    socialmediaComponent
+    SitedemoComponent,
+    SmComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,

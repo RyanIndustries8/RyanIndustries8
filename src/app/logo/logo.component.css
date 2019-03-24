@@ -1,0 +1,7 @@
+svg {
+  -webkit-filter: drop-shadow(0px 1px 3px rgb(253,182,150));
+  filter: drop-shadow(0px 1px 3px rgb(253,182,150));
+  -webkit-fill: rgb(51,28,1);
+  fill: rgb(51,28,1);
+  width: 100%;
+}

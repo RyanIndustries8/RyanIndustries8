@@ -3,6 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
+import * as $ from 'jquery';
+
+declare var $: any;
 
 @Component({
   selector: 'app-about',
@@ -10,29 +13,32 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  title = "ABOUT";
-  aboutContent: any;
-  aboutSkill: any;
-  aboutRec: any;
+  title = 'About';
+  // aboutRec: any;
 
-  constructor( private http: HttpClient,private router: Router, public sanitizer: DomSanitizer ) {
+  constructor( private http: HttpClient, private router: Router, public sanitizer: DomSanitizer ) {
     this.sanitizer = sanitizer;
   }
 
-  ngOnInit(): void {
-       this.http.get<any>('./assets/aboutSkill.json').subscribe(
-         data => {
-           this.aboutSkill = data;
-         })
+public  ngOnInit() {
+    $(window).scroll(function() {
+      const offset = $(window).scrollTop();
 
-     this.http.get<any>('./assets/text.json').subscribe(
-       data => {
-         this.aboutContent = data;
-       })
+      if (offset < 0) {
 
-     this.http.get<any>('./assets/aboutRec.json').subscribe(
-       data => {
-         this.aboutRec = data;
-       })
+        $('#navLogo').removeClass('animateLogo');
+      } else {
+        $('#navLogo').addClass('animateLogo');
+      }
+    });
+
+    $(document).ready(function() {
+      $('#navLogo').addClass('animateLogo');
+    });
+
+     // this.http.get<any>('./assets/aboutRec.json').subscribe(
+     //   data => {
+     //     this.aboutRec = data;
+     //   });
   }
 }

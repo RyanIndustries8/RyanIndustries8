@@ -1,19 +1,27 @@
 <app-header></app-header>
+<div class="stripes"></div>
 <div class="contact stack">
-  <img class="writeMe" src="assets/img/telegraph.png" />
-	<div>
-    <form method="post">
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <input type="number" placeholder="Phone" />
-      <textarea></textarea>
-    </form>
+  <div class="telegraph">
+    <div class="telegramHeader">
+      <div class="teleLabel">
+        <div class="postL">POST</div>
+          <div class="teleLogo">
+            <app-logo></app-logo>
+          </div>
+        <div class="postR">OFFICE</div>
+      </div>
+      <h3>Telegram</h3>
+      <h4>Official Connection Invitation</h4>
+    </div>
+    <div class="teleContent">
+      <a href="jen.byron83@gmail.com"><h1>jen.byron83@gmail.com</h1></a>
+      <h1>(509)301-5601</h1>
+    </div>
+    <div class="social">
+      <div class="smBlock" >
+        <a class="icon" *ngFor="let social of sm" target="_blank" href={{social.site}}><img [src]="social.icon" /><span class="platform">{{social.platform}}</span></a>
+      </div>
+    </div>
   </div>
-	<div class="telegraph">
-		<h3>Telegraph</h3>
-		<h1>jen.byron83@gmail.com</h1>
-		<h1>(509)301-5601</h1>
-	</div>
   <div></div>
-<app-socialmedia></app-socialmedia>
 </div>

@@ -7,6 +7,8 @@
 	font-family: Herma;
 	src: url(/assets/fonts/HemeraIIDEMO.ttf);
 }
+/* HermaIIDEMO created by Konstantine Studio. To learn more about
+this fantastic font, visit their website at https://konstantinestudio.com/ */
 
 @font-face {
 	font-family: Metrophobic;
@@ -26,7 +28,12 @@ body {
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background: black;
+	color: rgb(255,255,255);
+
+}
+
+.noScroll {
+	position: fixed;
 }
 
 #pinned-element1 {
@@ -37,7 +44,10 @@ body {
 	position: absolute;
 	height: 100vh;
 	width: 100vw;
-	background-image: repeating-linear-gradient(90deg, rgb(65,37,32), rgb(65,37,32) 30px, rgb(104,36,22) 30px, rgb(104,36,22) 60px);
+	background-image: repeating-linear-gradient(90deg, rgb(65,37,32),
+																										 rgb(65,37,32) 30px,
+																										 rgb(104,36,22) 30px,
+																										 rgb(104,36,22) 60px);
 	top: 0;
 }
 
@@ -46,18 +56,173 @@ body {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(rgba(0,0,0,.3), transparent, rgba(0,0,0,.6));
+	background: linear-gradient(rgba(0,0,0,.3),
+															transparent,
+															rgba(0,0,0,.6));
 }
 
 .opacit {
   opacity: .4;
 }
 
+/**** SIGN ****/
+.sign {
+  background: linear-gradient(210deg,rgba(197,144,78,.3),rgba(136,61,1,.4)),
+              linear-gradient(120deg,rgba(197,144,78,.2),rgba(136,61,1,.5)),
+              linear-gradient(rgb(197,144,78),rgb(104,57,1));
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+	padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	-webkit-box-shadow: -5px 15px 23px -2px rgba(158,83,18,.6) inset,
+              5px 15px 23px -2px rgba(158,83,18,.6) inset,
+              5px -6px 23px -2px rgba(88,48,1,.7) inset,
+              -5px -6px 23px -2px rgba(88,48,1,.7) inset,
+              0px 0px 11px 0px rgb(88,48,1);
+	-moz-box-shadow: -5px 15px 23px -2px rgba(158,83,18,.6) inset,
+              5px 15px 23px -2px rgba(158,83,18,.6) inset,
+              5px -6px 23px -2px rgba(88,48,1,.7) inset,
+              -5px -6px 23px -2px rgba(88,48,1,.7) inset,
+              0px 0px 11px 0px rgb(88,48,1);
+  box-shadow: -5px 15px 23px -2px rgba(158,83,18,.6) inset,
+              5px 15px 23px -2px rgba(158,83,18,.6) inset,
+              5px -6px 23px -2px rgba(88,48,1,.7) inset,
+              -5px -6px 23px -2px rgba(88,48,1,.7) inset,
+              0px 0px 11px 0px rgb(88,48,1);
+  position: relative;
+}
+
+.innerSign {
+  background: linear-gradient(rgba(203,152,99,.6),rgba(165,105,43,.3)), radial-gradient(rgb(203,152,99),rgb(165,105,43));
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	-webkit-box-shadow: 0px 2px 23px -4px rgb(69,69,69);
+	-moz-box-shadow: 0px 2px 23px -4px rgb(69,69,69);
+  box-shadow: 0px 2px 23px -4px rgb(69,69,69);
+}
+
+.innerLabel {
+  font-family: Herma;
+  font-size: 8vw;
+  color: rgb(104,57,1);
+  text-shadow: 0px 1px 0px rgb(253,182,150);
+}
+
+.rivetsTop {
+  top: 16px;
+}
+
+.rivetsBottom {
+  bottom: 16px;
+}
+
+.rivetsTop,
+.rivetsBottom {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rivetsRight,
+.rivetsLeft {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rivetsRight,
+.rivetsLeft {
+  top: 30px;
+  bottom: 30px;
+}
+
+.rivetsRight {
+  right: 16px;
+}
+
+.rivetsLeft {
+  left: 16px;
+}
+
+.whoPlate .innerLabel {
+  white-space: nowrap;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+
+.rivetT,
+.rivetR,
+.rivetL {
+  background: linear-gradient(238deg,rgba(197,144,78,.5),rgba(136,61,1,.4)),
+              linear-gradient(-37deg,rgba(197,144,78,.3),rgba(136,61,1,.5)),
+              linear-gradient(rgb(197,144,78),rgb(104,57,1));
+}
+
+.rivetB {
+  background: linear-gradient(238deg,rgba(184,134,81,.2),rgba(164,94,25,.4)),
+              linear-gradient(-37deg,rgba(184,134,81,.1),rgba(164,94,25,.5)),
+              linear-gradient(rgb(197,144,78),rgb(104,57,1));
+}
+
+.rivet {
+  width: 15px;
+  height: 15px;
+  -webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	-webkit-box-shadow: 0px 0px 11px 0px rgb(88,48,1);
+	-moz-box-shadow: 0px 0px 11px 0px rgb(88,48,1);
+  box-shadow: 0px 0px 11px 0px rgb(88,48,1);
+}
+
+.signInvis {
+  width: 60%;
+	min-width: 360px;
+  height: 25vw;
+	min-height: 192px;
+  margin-top: -6px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.whoPlate {
+  width: 350px;
+  height: 170px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.workContainer {
+  padding-top: 10vh;
+  position: relative;
+  z-index: 1;
+}
+
+.workContainer h1 {
+  color: rgb(255,255,255);
+  font-family: Herma;
+  font-size: 54px;
+  margin-bottom: 60px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+}
+
 
 /**** CONTACT ****/
-.contact {
-  background: rgb(0,0,0);
-}
 
 .aboveFold,
 .contact {
@@ -74,7 +239,7 @@ body {
   padding: 40px 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .telegraph {
@@ -115,16 +280,14 @@ body {
 .cogE {
 	right: 25px;
 	top: 6px;
+	display: none;
+	visibility: collapse;
 }
 
 .cogF {
 	position: absolute !important;
 	bottom: -70px;
 	right: -70px;
-}
-
-.cog2A {
-
 }
 
 .cog2B {
@@ -196,13 +359,20 @@ body {
   position: absolute;
   content: '';
   border: 30px solid rgb(153,153,153);
-  border-radius: 100%;
+  -webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
   width: calc(100% - 60px);
   height: calc(100% - 60px);
   top: 0;
   left: 0;
   z-index: -1;
-  box-shadow: 0px 0px 10px 1px rgba(77,57,8,.5) inset, 0px 0px 10px 1px rgba(77,57,8,.8);
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(77,57,8,.5) inset,
+							0px 0px 10px 1px rgba(77,57,8,.8);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(77,57,8,.5) inset,
+							0px 0px 10px 1px rgba(77,57,8,.8);
+  box-shadow: 0px 0px 10px 1px rgba(77,57,8,.5) inset,
+							0px 0px 10px 1px rgba(77,57,8,.8);
 }
 
 .cogSM .cogCenter:before {
@@ -221,8 +391,9 @@ body {
 }
 
 .cogCenterMid {
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
 	border-radius: 100%;
-	/* background: radial-gradient(transparent, transparent, rgba(77,57,8,.7)); */
 	height: 25%;
 	width: 25%;
 	position: relative;
@@ -232,20 +403,32 @@ body {
   position: absolute;
   content: '';
   border: 15px solid rgb(153,153,153);
-  border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
   width: calc(100% - 30px);
   height: calc(100% - 30px);
   top: 0;
   left: 0;
   z-index: -1;
-  box-shadow: 0px 0px 13px 8px rgba(0,0,0,.75) inset, 0px 0px 3px 1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0px 0px 13px 8px rgba(0,0,0,.75) inset,
+							0px 0px 3px 1px rgba(0,0,0,.3);
+	-moz-box-shadow: 0px 0px 13px 8px rgba(0,0,0,.75) inset,
+							0px 0px 3px 1px rgba(0,0,0,.3);
+  box-shadow: 0px 0px 13px 8px rgba(0,0,0,.75) inset,
+							0px 0px 3px 1px rgba(0,0,0,.3);
 }
 
 .cogSM .cogCenterMid:before {
 	border: 6px solid rgb(153,153,153);
   width: calc(100% - 12px);
   height: calc(100% - 12px);
-	box-shadow: 0px 0px 13px 2px rgba(0,0,0,.75) inset, 0px 0px 3px 1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0px 0px 13px 2px rgba(0,0,0,.75) inset,
+							0px 0px 3px 1px rgba(0,0,0,.3);
+	-moz-box-shadow: 0px 0px 13px 2px rgba(0,0,0,.75) inset,
+							0px 0px 3px 1px rgba(0,0,0,.3);
+	box-shadow: 0px 0px 13px 2px rgba(0,0,0,.75) inset,
+							0px 0px 3px 1px rgba(0,0,0,.3);
 }
 
 .pegWrap {
@@ -271,6 +454,10 @@ body {
 
 .barStick:nth-child(2) {
 	position: absolute;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
 	transform: rotate(90deg);
 }
 
@@ -283,10 +470,18 @@ body {
 }
 
 .pegStick:nth-child(2) {
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
 	transform: rotate(30deg);
 }
 
 .pegStick:nth-child(3) {
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	-o-transform: rotate(60deg);
 	transform: rotate(60deg);
 }
 
@@ -296,14 +491,26 @@ body {
 }
 
 .pegStick:nth-child(4) {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
 	transform: rotate(90deg);
 }
 
 .pegStick:nth-child(5) {
+	-webkit-transform: rotate(120deg);
+	-moz-transform: rotate(120deg);
+	-ms-transform: rotate(120deg);
+	-o-transform: rotate(120deg);
 	transform: rotate(120deg);
 }
 
 .pegStick:nth-child(6) {
+	-webkit-transform: rotate(150deg);
+	-moz-transform: rotate(150deg);
+	-ms-transform: rotate(150deg);
+	-o-transform: rotate(150deg);
 	transform: rotate(150deg);
 }
 
@@ -313,6 +520,7 @@ body {
 	border-right: 5px solid transparent;
 	height: 0;
 	width: 20px;
+	-webkit-filter: drop-shadow(0px 1px 1px rgba(77,57,8,1));
 	filter: drop-shadow(0px 1px 1px rgba(77,57,8,1));
 }
 
@@ -326,7 +534,12 @@ body {
 }
 
 .pegs:nth-child(2) {
+	-webkit-transform: scaleY(-1);
+	-moz-transform: scaleY(-1);
+	-ms-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
 	transform: scaleY(-1);
+	-webkit-filter: drop-shadow(0px -1px 1px rgba(77,57,8,1));
 	filter: drop-shadow(0px -1px 1px rgba(77,57,8,1));
 }
 
@@ -340,6 +553,10 @@ body {
 }
 
 .cogBars:nth-child(2) {
+	-webkit-transform: scaleY(-1);
+	-moz-transform: scaleY(-1);
+	-ms-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
 	transform: scaleY(-1);
 	margin-bottom: 30px;
 }
@@ -359,7 +576,11 @@ body {
 .md1r .cogMD,
 .md2 .cogMD,
 .md2r .cogMD {
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
 	animation-timing-function: linear;
 }
 
@@ -374,6 +595,8 @@ body {
 .md1r .cogMD,
 .md2 .cogMD,
 .md2r .cogMD {
+	-webkit-animation-duration: 10000ms;
+	-moz-animation-duration: 10000ms;
 	animation-duration: 10000ms;
 }
 
@@ -385,6 +608,8 @@ body {
 .md2 .cogMD,
 .lg2r .cogLG,
 .lg3r .cogLG {
+	-webkit-animation-name: spin;
+	-moz-animation-name: spin;
 	animation-name: spin;
 }
 
@@ -395,6 +620,8 @@ body {
 .md2r .cogMD,
 .lg2 .cogLG,
 .lg3 .cogLG {
+	-webkit-animation-name: counterSpin;
+	-moz-animation-name: counterSpin;
 	animation-name: counterSpin;
 }
 
@@ -402,5 +629,245 @@ body {
 .sm1r .cogSM,
 .sm2 .cogSM,
 .sm2r .cogSM {
+	-webkit-animation-duration: 5000ms;
+	-moz-animation-duration: 5000ms;
 	animation-duration: 5000ms;
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+  }
+}
+
+@keyframes counterSpin {
+  from {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+  }
+  to {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+  }
+}
+
+.telegraph {
+  background: linear-gradient(rgba(203,152,99,.6), rgba(165,105,43,.3)),
+							radial-gradient(rgb(203,152,99), rgb(165,105,43));
+	color: rgb(51,28,1);
+	width: 50%;
+	border: 1px solid rgba(0,0,0,.5);
+	font-family: Metrophobic !important;
+	-webkit-box-shadow: 0 0 11px 1px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 0 11px 1px rgba(0,0,0,.4);
+  box-shadow: 0 0 11px 1px rgba(0,0,0,.4);
+	opacity: 1;
+	-webkit-transition: 2s;
+	-moz-transition: 2s;
+	-ms-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
+}
+
+.teleContent a {
+	color: rgb(51,28,1);
+}
+
+.telegramHeader {
+	width: 100%;
+	text-align: center;
+  text-transform: uppercase;
+	position: relative;
+}
+
+.teleLabel {
+	height: 75px;
+	display: flex;
+	justify-content: center;
+}
+
+.postL,
+.postR {
+	border-bottom: 1px solid rgb(0,0,0);
+	width: 40%;
+	margin: 0 20px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 3vw;
+	font-family: Herma;
+}
+
+.postL {
+	justify-content: flex-end;
+}
+
+.postR {
+  justify-content: flex-start;
+}
+
+.teleLogo {
+	width: 50px;
+  height: 70px;
+  position: relative;
+  top: 15px;
+  margin-bottom: 60px;
+}
+
+.telegramHeader h3 {
+	margin-bottom: 10px;
+	font-size: 2vw;
+}
+
+.telegramHeader h4 {
+	margin: 0;
+}
+
+.teleContent {
+	margin: 60px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 9;
+}
+
+.teleContent a h1 {
+	margin: 0;
+}
+
+.social {
+  min-width: 70px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.smBlock {
+  width: 215px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+a span.platform {
+  visibility: hidden;
+  transition: 1s;
+  opacity: 0;
+}
+
+a:hover span.platform {
+  visibility: visible;
+  transition: 1s;
+  opacity: 1;
+}
+
+.platform {
+  width: auto;
+  position: absolute;
+	text-align: center;
+  font-size: 18px;
+  top: -26px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  align-items: center;
+  cursor: pointer;
+	-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+	position: relative;
+	bottom: 0;
+}
+
+.icon img {
+  -webkit-filter: drop-shadow(0px 0px 1px rgb(253,182,150));
+  filter: drop-shadow(0px 0px 1px rgb(253,182,150));
+	width: 40px;
+	min-height: 40px;
+  opacity: .6;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+
+}
+
+.icon:hover img {
+  opacity: 1;
+}
+
+.sm {
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+@media screen and (max-width: 991px) {
+
+	.telegraph {
+		width: 75%;
+	}
+
+	.postL,
+	.postR {
+		font-size: 30px;
+	}
+
+	.telegramHeader h3 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 865px) {
+/* start of wide screen styles */
+	.cogB,
+	.cogD {
+		display: none;
+		visibility: collapse;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.teleContent h1 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 479px) {
+
+	.postL,
+	.postR {
+		font-size: 22px;
+	}
 }

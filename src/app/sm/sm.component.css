@@ -1,0 +1,79 @@
+.social {
+  min-width: 70px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.smBlock {
+  width: 215px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+a span.platform {
+  visibility: hidden;
+  transition: 1s;
+  opacity: 0;
+}
+
+a:hover span.platform {
+  visibility: visible;
+  transition: 1s;
+  opacity: 1;
+}
+
+.platform {
+  width: auto;
+  position: absolute;
+	text-align: center;
+  font-size: 18px;
+  top: -26px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  align-items: center;
+  cursor: pointer;
+	-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+	position: relative;
+	bottom: 0;
+}
+
+.icon img {
+  -webkit-filter: drop-shadow(0px 0px 1px rgb(253,182,150));
+  filter: drop-shadow(0px 0px 1px rgb(253,182,150));
+	width: 40px;
+	min-height: 40px;
+  opacity: .6;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+
+}
+
+.icon:hover img {
+  opacity: 1;
+}
+
+.sm {
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}

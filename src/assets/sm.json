@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "platform": "Twitter",
+    "icon": "./assets/icons/twitter.png",
+    "site": "https://twitter.com/ryanIndustries8"
+  },
+  {
+    "id": 2,
+    "platform": "LinkedIn",
+    "icon": "./assets/icons/linkedin.png",
+    "site": "https://www.linkedin.com/in/jennifer-byron/"
+  },
+  {
+    "id": 3,
+    "platform": "CodePen",
+    "icon": "./assets/icons/codepen.png",
+    "site": "https://codepen.io/ryanindustries8/"
+  },
+  {
+    "id": 4,
+    "platform": "GitHub",
+    "icon": "./assets/icons/git.png",
+    "site": "https://github.com/RyanIndustries8"
+  }
+]

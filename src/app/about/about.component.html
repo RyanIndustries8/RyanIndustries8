@@ -1,39 +1,226 @@
 <app-header></app-header>
-<div class="mainBlock">
+<div class="stripes"></div>
+<div class="workContainer">
+  <h1>{{ title }}</h1>
+  <div class="pageSplit">
+    <div class="self">
+        <div class="innerSign">
+          <img src="assets/img/JenniferByron.jpg" />
+        </div>
+      </div>
 
-  <div class="titleBar">
-    <h1>{{title}}</h1>
-  </div>
-  <div class="aboutHero"></div>
-  <div class="centeredStatement">
-    <div class="flexRow">
-    <div *ngFor="let new of aboutContent">
-    <p *ngFor="let subitem of new['statement']">{{subitem.para}}</p>
-  </div>
-  <img *ngFor="let new of aboutContent" class="profile" src={{new.profile}} />
-</div>
-  </div>
-    <div class="flexRow">
-
-<div class="basicFlexColumn">
-          <div *ngFor="let doc of aboutRec">
-          <ul>
-            <li><h5>{{doc.event}}</h5></li>
-            <li class="basicFlexColumn"><img class="CIimg" src={{doc.img}} /><span>{{doc.info}}</span></li>
+    <div class="page">
+      <div class="pageHeader">
+        <div class="decoLeft"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 width="121.94px" height="51px" viewBox="0 0 121.94 51" enable-background="new 0 0 121.94 51" xml:space="preserve">
+        <circle fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" cx="23.892" cy="37.763" r="12.237"/>
+        <circle fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" cx="23.892" cy="37.763" r="9.236"/>
+        <path stroke="#202020" stroke-miterlimit="10" d="M20.469,41.186h6.846V34.34h-6.846V41.186z M21.06,37.763
+        	c0-1.564,1.268-2.832,2.832-2.832c1.563,0,2.832,1.268,2.832,2.832s-1.269,2.832-2.832,2.832
+        	C22.327,40.595,21.06,39.327,21.06,37.763"/>
+        <path fill="none" stroke="#202020" stroke-miterlimit="10" d="M20.469,41.186h6.846V34.34h-6.846V41.186z M21.06,37.763
+        	c0-1.564,1.268-2.832,2.832-2.832c1.563,0,2.832,1.268,2.832,2.832s-1.269,2.832-2.832,2.832
+        	C22.327,40.595,21.06,39.327,21.06,37.763z"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="26.942" y1="34.747" x2="30.424" y2="31.266"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="20.999" y1="34.871" x2="17.596" y2="31.467"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="23.892" y1="34.339" x2="23.892" y2="28.771"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="23.892" y1="40.931" x2="23.892" y2="46.673"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="27.099" y1="37.763" x2="33.123" y2="37.763"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="21.06" y1="37.763" x2="14.655" y2="37.763"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="26.553" y1="40.385" x2="30.139" y2="43.97"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="21.06" y1="40.595" x2="17.379" y2="44.275"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="12.645" y1="42.935" x2="7.703" y2="42.935"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="7.781" y1="40.723" x2="0.649" y2="40.723"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="70.177" y1="45.192" x2="35.641" y2="41.186"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="80.855" y1="37.763" x2="36.129" y2="37.763"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="89.975" y1="30.538" x2="35.641" y2="34.339"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="101.277" y1="21.73" x2="33.387" y2="30.043"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="110.475" y1="13.39" x2="25.28" y2="25.525"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="118.606" y1="1.646" x2="19.298" y2="21.704"/>
+        <polyline fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" points="108.841,13.623 111.748,13.183
+        	119.75,1.438 117.487,1.873 "/>
+        <path fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" d="M105.416,14.11c0,0-0.515,4.853-4.139,7.62
+        	l-2.548,0.312"/>
+        <path fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" d="M94.31,22.583c0,0-2.384,6.355-4.606,7.974
+        	l-1.063,0.074"/>
+        <path fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" d="M85.143,30.631c0,0-1.676,5.236-4.561,7.131h-0.974"
+        	/>
+        <path fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" d="M74.658,37.763c0,0-0.468,4.311-4.481,7.429
+        	l-1.239-0.144"/>
+        <path fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" d="M8.327,33.812c0,0-0.631-9.764,11.666-12.248"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="8.327" y1="42.935" x2="8.327" y2="33.5"/>
+        <path fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" d="M9.307,29.132c0,0-8.346,1.874-8.307,9.473"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="1" y1="38.218" x2="1" y2="41.343"/>
+        </svg></div>
+        <div class="firstName">Jennifer</div>
+        <div class="centLogo"><app-logo></app-logo></div>
+        <div>Byron</div>
+        <div class="decoRight"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 width="121.94px" height="51px" viewBox="0 0 121.94 51" enable-background="new 0 0 121.94 51" xml:space="preserve">
+        <circle fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" cx="23.892" cy="37.763" r="12.237"/>
+        <circle fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" cx="23.892" cy="37.763" r="9.236"/>
+        <path stroke="#202020" stroke-miterlimit="10" d="M20.469,41.186h6.846V34.34h-6.846V41.186z M21.06,37.763
+        	c0-1.564,1.268-2.832,2.832-2.832c1.563,0,2.832,1.268,2.832,2.832s-1.269,2.832-2.832,2.832
+        	C22.327,40.595,21.06,39.327,21.06,37.763"/>
+        <path fill="none" stroke="#202020" stroke-miterlimit="10" d="M20.469,41.186h6.846V34.34h-6.846V41.186z M21.06,37.763
+        	c0-1.564,1.268-2.832,2.832-2.832c1.563,0,2.832,1.268,2.832,2.832s-1.269,2.832-2.832,2.832
+        	C22.327,40.595,21.06,39.327,21.06,37.763z"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="26.942" y1="34.747" x2="30.424" y2="31.266"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="20.999" y1="34.871" x2="17.596" y2="31.467"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="23.892" y1="34.339" x2="23.892" y2="28.771"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="23.892" y1="40.931" x2="23.892" y2="46.673"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="27.099" y1="37.763" x2="33.123" y2="37.763"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="21.06" y1="37.763" x2="14.655" y2="37.763"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="26.553" y1="40.385" x2="30.139" y2="43.97"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="21.06" y1="40.595" x2="17.379" y2="44.275"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="12.645" y1="42.935" x2="7.703" y2="42.935"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="7.781" y1="40.723" x2="0.649" y2="40.723"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="70.177" y1="45.192" x2="35.641" y2="41.186"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="80.855" y1="37.763" x2="36.129" y2="37.763"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="89.975" y1="30.538" x2="35.641" y2="34.339"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="101.277" y1="21.73" x2="33.387" y2="30.043"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="110.475" y1="13.39" x2="25.28" y2="25.525"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="118.606" y1="1.646" x2="19.298" y2="21.704"/>
+        <polyline fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" points="108.841,13.623 111.748,13.183
+        	119.75,1.438 117.487,1.873 "/>
+        <path fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" d="M105.416,14.11c0,0-0.515,4.853-4.139,7.62
+        	l-2.548,0.312"/>
+        <path fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" d="M94.31,22.583c0,0-2.384,6.355-4.606,7.974
+        	l-1.063,0.074"/>
+        <path fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" d="M85.143,30.631c0,0-1.676,5.236-4.561,7.131h-0.974"
+        	/>
+        <path fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" d="M74.658,37.763c0,0-0.468,4.311-4.481,7.429
+        	l-1.239-0.144"/>
+        <path fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" d="M8.327,33.812c0,0-0.631-9.764,11.666-12.248"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="8.327" y1="42.935" x2="8.327" y2="33.5"/>
+        <path fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" d="M9.307,29.132c0,0-8.346,1.874-8.307,9.473"/>
+        <line fill="none" stroke="#202020" stroke-width="2" stroke-miterlimit="10" x1="1" y1="38.218" x2="1" y2="41.343"/>
+        </svg></div>
+      </div>
+      <div class="pageConnHeader">
+        <div>Renton, WA</div>
+        <div>RyanIndustries8</div>
+        <div>5&cent;</div>
+      </div>
+      <div class="workTitle">
+        Front-End Web Developer
+      </div>
+      <div class="pageTwoCol">
+        <div class="col">
+          <ul class="sm">
+            <li><h3>Connect</h3>
+              <ul>
+                <li class="email"><a href="mailto:jen.byron83@gmail.com">jen.byron83@gmail.com</a></li>
+              </ul>
+              <ul>
+                <li class="smIcon"><a href="https://twitter.com/ryanIndustries8"><img src="./assets/icons/twitter.png" /></a></li>
+                <li class="smIcon"><a href="https://www.linkedin.com/in/jennifer-byron/"><img src="./assets/icons/linkedin.png" /></a></li>
+                <li class="smIcon"><a href="https://codepen.io/ryanindustries8/"><img src="./assets/icons/codepen.png" /></a></li>
+                <li class="smIcon"><a href="https://github.com/RyanIndustries8"><img src="./assets/icons/git.png" /></a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="core">
+            <li><h3>Core</h3>
+              <ul>
+                <li>HTML</li>
+              </ul>
+              <ul>
+                <li>CSS</li>
+              </ul>
+              <ul>
+                <li>JavaScript</li>
+              </ul>
+              <ul>
+                <li>PHP</li>
+              </ul>
+              <ul>
+                <li>Git</li>
+              </ul>
+              <ul>
+                <li>Atom</li>
+              </ul>
+              <ul>
+                <li>Photoshop</li>
+              </ul>
+              <ul>
+                <li>Illustrator</li>
+              </ul>
+              <ul>
+                <li>Sketch</li>
+              </ul>
+              <ul>
+                <li>Version1</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="lf">
+            <li><h3>Libraries/Frameworks</h3>
+              <ul>
+                <li>Angular</li>
+                <li>Angular Material</li>
+                <li>GreenSock</li>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+                <li>jQuery UI</li>
+                <li>AngularJS</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="comp">
+            <li><h3>Competencies</h3>
+              <ul>
+                <li>Agile Development</li>
+                <li>Responsive Design</li>
+                <li>Cross-Browser Styling & Testing</li>
+                <li>CSS Graphics</li>
+                <li>Front-End Security</li>
+                <li>User Experience Design</li>
+                <li>Visual Design</li>
+                <li>Animation</li>
+                <li>Search Engine Optimization</li>
+                <li>WebGL</li>
+              </ul>
+            </li>
           </ul>
         </div>
-</div>
-<div class="basicFlexRow">
-        <div *ngFor="let doc of aboutSkill" >
-        <ul>
-          <li><h5>{{doc.title}}</h5></li>
-        <ul *ngFor="let subitem of doc['skills']">
-          <li>{{subitem.prog}}</li>
-          <li><a target="_blank" href={{subitem.link}}>{{subitem.type}}</a></li>
-        </ul>
-      </ul>
+        <div class="col">
+          <div class="statement">
+            <p>My name is Jennifer Byron and I'm a front-end developer with a passion for bringing digital experiences to life. Like all front-end devs I have studied the arts of HTML, CSS, and JavaScript, but my vision goes beyond the code and expands into story telling. There are few other places you can invite someone to interact with art and the web is truly one of the greatest platforms to bring it to life. I love to manipluate the power of CSS and build my visions into code. The site you're viewing is all brought to you via CSS. It is truly a masterpiece in it's own right.</p>
+            <p>I have spent the last 15 years perfecting my craft, pushing boundaries and bringing new ideas to the web community. As a consultant I bring cutting edge techniques and an expert knowledge of front-end design, big data display, and responsive tactics. I am blessed to work tightly with amazing UX minds and together we create stunning prototypes and large scale applications for Fortune 500 clients in a very agile environment; did I mention I'm Scrum certified?</p>
+            <p>When I'm not coding I spend much of my time drawing, painting, reading, hiking, and photographing the beautiful wilderness of King County.</p>
+            <p>I'm always working to improve not only my code skills, but soft ones as well through Toast Masters, Women Who Code events, and annual trips to SmashingConf to be sure I'm on top of my game.</p>
+            <p>"I am an artist, the web is my canvas."</p>
+          </div>
+          <ul class="employment">
+            <li><h3>Where I've Contributed</h3></li>
+            <ul>
+              <li>Sila Solutions Group</li>
+              <li>Pend Oreille Valley Networks, Inc.</li>
+              <li>Freelance</li>
+            </ul>
+          </ul>
+          <div class="speaking">
+            <h3>Speaking</h3>
+            <div class="where">
+              <div class="what">
+                <p>Intro to CSS Graphics</p>
+                <p>SmashingConf Jam Session</p>
+              </div>
+              <p>New York, NY - October 2016</p>
+            </div>
+            <div class="where">
+              <div class="what">
+                <p>Advabced CSS Graphics</p>
+                <p>SmashingConf Jam Session</p>
+              </div>
+              <p>San Francisco, CA - April 2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-    </div>
+
 </div>

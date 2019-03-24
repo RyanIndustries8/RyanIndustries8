@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import * as $ from 'jquery';
 
-declare var $:any;
+declare var $: any;
 declare var ScrollMagic: any;
 declare var TweenMax: any;
 declare var events: any;
@@ -16,120 +16,152 @@ declare var events: any;
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  logo = './assets/icons/logo.png'
-  // intro: object [];
-  socialmedia: any;
+  logo = './assets/icons/logo.png';
+  sm: any;
 
   constructor(private http: HttpClient, private router: Router, public sanitizer: DomSanitizer ) {
     this.sanitizer = sanitizer;
   }
 
-public  ngOnInit() {
+public ngOnInit() {
 
+  $(window).scroll(function() {
+    const offset = $(window).scrollTop();
 
+    if (offset < 550) {
+
+      $('#navLogo').removeClass('animateLogo');
+    } else {
+      $('#navLogo').addClass('animateLogo');
+    }
+  });
 
     $(document).ready(function() {
 
-      //Explore Arrow
-      $('.introBtn').mouseover(function(){
-      	$('.exploreArrow').addClass('start');
+      // Explore Arrow
+      $('.introBtn').mouseover(function() {
+        $('.exploreArrow').addClass('start');
       });
 
-      $('.introBtn').mouseout(function(){
-      	$('.exploreArrow').removeClass('start');
+      $('.introBtn').mouseout(function() {
+        $('.exploreArrow').removeClass('start');
       });
 
-      //Nav Menu Scroll
+      // Nav Menu Scroll
       $('.easyScroll').on('click', function(e) {
-      	e.preventDefault();
+        e.preventDefault();
 
-      	var place = this.hash,
-      			$place = $(place);
-      	$('html, body').stop().animate({
-      		'scrollTop': $place.offset().top
-      	}, 1250, 'swing', function() {
-      		window.location.hash = place;
-      	});
+        const place = this.hash,
+          $place = $(place);
+            $('html, body').stop().animate({
+              'scrollTop': $place.offset().top
+            }, 1000, 'linear', function() {
+              window.location.hash = place;
+            });
+
       });
 
-      //Nav Menu Section Hover
-      $(".hideme").hide();
-      $("nav ul li a").hover(function(e) {
+      // Nav Menu Section Hover
+      $('.hideme').hide();
+      $('nav ul li a').hover(function(e) {
         e.preventDefault();
-        $(this).find(".hideme").delay(250).fadeToggle(450);
+        $(this).find('.hideme').fadeToggle(450);
       });
 
     });
 
-    //Nav Menu Add Class Active
-    $('#one').addClass("active");
+    // Nav Menu Add Class Active
+    $('#one').addClass('active');
 
     $(document).scroll(function () {
-      //Smooth Scrolling for Nav Menu and Explore Link on Home Frame
-    var scrollSection = $(document).scrollTop();
-    $('nav ul li a').each(function (){
-    	var currentLink = $(this);
-    	var refFlement = $(currentLink.attr("href"));
-    	if (refFlement.position().top <= scrollSection && refFlement.position().top + refFlement.height() > scrollSection) {
-          $('nav ul li a').removeClass("active");
-          currentLink.addClass("active");
+      // Smooth Scrolling for Nav Menu and Explore Link on Home Frame
+    const scrollSection = $(document).scrollTop();
+    $('nav ul li a').each(function () {
+      const currentLink = $(this);
+      const refFlement = $(currentLink.attr('href'));
+      if (refFlement.position().top <= scrollSection && refFlement.position().top + refFlement.height() > scrollSection) {
+          $('nav ul li a').removeClass('active');
+          currentLink.addClass('active');
         }
-    	});
+      });
 
     });
 
 
-    //Init Scroll Magic
-      var controller = new ScrollMagic.Controller();
-      //Pinned Stripped Background
-      var pinIntroScene = new ScrollMagic.Scene({
+    // Init Scroll Magic
+      const controller = new ScrollMagic.Controller();
+      // Pinned Stripped Background
+      const pinIntroScene = new ScrollMagic.Scene({
         triggerElement: '#pinned-trigger1',
-        duration: $(window).height() - 100,
+        duration: '400%',
         triggerHook: 0,
         reverse: true
       })
       .setPin('#pinned-element1')
       .addTo(controller);
 
-      var introScene = new ScrollMagic.Scene ({
+      // Side Navigation
+      const introScene = new ScrollMagic.Scene ({
         triggerElement: '#navTrigger',
         triggerHook: 'onEnter'
       })
       .setClassToggle('#pinned-nav', 'fade-in')
       .addTo(controller);
 
-      var LgCog = new ScrollMagic.Scene({
-        triggerElement: '#blank',
-        triggerHook: 'onEnter',
-        duration: '200%',
-        reverse: true
-      })
-      .setTween(TweenMax.to('#lgcog', 1, {css:{rotation:-360, rotation:360}}))
-      .addTo(controller);
-
-      var SmCog = new ScrollMagic.Scene({
-        triggerElement: '#blank',
-        triggerHook: 'onEnter',
+      // RyanIndustries8 home animation to reduce scale
+      const ryan = new ScrollMagic.Scene({
+        triggerElement: '#home',
+        triggerHook: 0,
         duration: $(window).height(),
         reverse: true
       })
-      .setTween(TweenMax.to('#smcog', 5, {css:{rotation:360, rotation:-360}}))
+      .setPin('#home')
+      .setTween(TweenMax.to('#RyanIndustries8', 1, {css: { scale: .3 }}))
       .addTo(controller);
 
-      var ryan = new ScrollMagic.Scene({
-        triggerElement: '#home',
-        triggerHook: 0,
-        duration: 300,
+      // About Screen Pinned
+      const aboutScene = new ScrollMagic.Scene({
+        triggerElement: '#about',
+        triggerHook: 'onLeave',
+        duration: $(window).height() * 1.5,
         reverse: true
       })
-      .setPin('#home')
-      .setTween(TweenMax.to('#RyanIndustries8', .3, {css:{scale:.3}}))
+      .setPin('#about')
       .addTo(controller);
-      
-       this.http.get<any>('./assets/socialMedia.json').subscribe(
-         data => {
-           this.socialmedia = data;
-         });
-  }
 
+      // About/Port Fixed
+      const apScene = new ScrollMagic.Scene({
+        triggerElement: '#port',
+        triggerHook: 'onEnter',
+        duration: '100%',
+        reverse: true
+      })
+      .setClassToggle('#about', 'new').addTo(controller);
+
+      // Portfolio Screen Pinned
+      const portScene = new ScrollMagic.Scene({
+        triggerElement: '#port',
+        triggerHook: 'onLeave',
+        duration: '75%',
+        reverse: true
+      })
+      .setPin('#port')
+      .addTo(controller);
+
+      // Large rotating cog on Port slide
+      const LgCog = new ScrollMagic.Scene({
+        triggerElement: '#blank',
+        triggerHook: 'onEnter',
+        duration: '100%',
+        reverse: true
+      })
+      .setTween(TweenMax.to('#lgcog', 5, {rotation: -360 }))
+      .addTo(controller);
+
+      this.http.get<any>('./assets/sm.json').subscribe(
+        data => {
+          this.sm = data;
+        });
+
+}
 }

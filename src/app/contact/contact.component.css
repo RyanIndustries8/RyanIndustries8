@@ -1,26 +1,22 @@
-form {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 200px;
+.stripes {
+  position: fixed;
 }
 
-input {
-  background: transparent;
-  color: rgb(195,140,84);
-  outline: rgb(255,255,255);
-  font-size: 15px;
-  padding: 5px 10px;
+.teleContent a {
+	border-bottom: 2px solid transparent;
+	transition: ease 1s all;
 }
 
-.writeMe {
-  position: absolute;
-  left: 10px;
-  top: 20px;
-  z-index: 1;
+.teleContent a,
+.teleContent h1 {
+  color: rgba(51,28,1,.7);
 }
 
-.telegraph {
-  position: relative;
-  z-index: 2;
+.teleContent a:hover {
+	border-bottom: 2px solid rgba(51,28,1,.5);
+	transition: ease 1s all;
+}
+
+span.platform {
+	color: rgb(51,28,1);
 }

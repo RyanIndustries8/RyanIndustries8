@@ -1,15 +1,46 @@
+#home,
+#about,
+#port,
+.sign {
+	z-index: 2;
+}
+
+.cogF,
+.cogSpread3 {
+	z-index: -1;
+}
+
+.homeNav {
+	z-index: 2;
+}
+
 #home {
 	position: relative;
-	z-index: 1 !important;
 	top: 0;
 	height: 100vh;
 }
 
+#RyanIndustries8.fixme {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 #blank {
-	background: transparent;
 	height: 100vh;
 	width: 100%;
 	position: relative;
+}
+
+#about.new {
+	position: fixed !important;
+}
+
+#contact {
+	background: rgb(0,0,0);
 }
 
 .contact {
@@ -19,22 +50,37 @@
 	top: 0;
 }
 
+.icon {
+	color: rgba(253,182,150,0.5);
+}
+
 nav.homeNav {
 	position: fixed;
 	height: 100vh;
-  z-index: 99999;
   display: flex;
   align-items: center;
+	z-index: 999;
 }
 
 .homeNav {
+	-webkit-transform: translateX(-50px);
+	-moz-transform: translateX(-50px);
+	-ms-transform: translateX(-50px);
+	-o-transform: translateX(-50px);
 	transform: translateX(-50px);
+	-webkit-transition: all .75s ease-out;
+	-moz-transition: all .75s ease-out;
+	-o-transition: all .75s ease-out;
 	transition: all .75s ease-out;
 	opacity: 0;
 }
 
 .homeNav.fade-in {
 	opacity: 1;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
 	transform: translateX(0);
 }
 
@@ -51,13 +97,21 @@ nav.homeNav ul li a {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 10px;
-  transition: 1s;
+  -webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
 	opacity: .25;
 }
 
 nav.homeNav ul li a:hover {
 	opacity: .75;
-  transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
 }
 
 .hideme {
@@ -67,6 +121,8 @@ nav.homeNav ul li a:hover {
 .circle {
 	height: 10px;
 	width: 10px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
 	border-radius: 100%;
 	background: rgb(255,255,255);
 	border: 2px grey solid;
@@ -74,7 +130,6 @@ nav.homeNav ul li a:hover {
 
 .active {
   opacity: 1 !important;
-
 }
 
 .introBtn {
@@ -84,9 +139,14 @@ nav.homeNav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+	font-family: serif;
+	font-size: 22px;
+	text-transform: uppercase;
 }
 
 .start {
+	-webkit-animation-iteration-count: infinite !important;
+	-moz-animation-iteration-count: infinite !important;
 	animation-iteration-count: infinite !important;
 }
 
@@ -97,11 +157,18 @@ nav.homeNav ul li a:hover {
   position: absolute;
   margin-top: -10px;
   opacity: 0;
+	-webkit-animation-name: exploring;
+	-moz-animation-name: exploring;
 	animation-name: exploring;
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
 	animation-duration: 1.5s;
+	-webkit-animation-delay: 0;
+	-moz-animation-delay: 0;
 	animation-delay: 0;
+	-webkit-animation-iteration-count: 0;
+	-moz-animation-iteration-count: 0;
 	animation-iteration-count: 0;
-
 }
 
 .exploreArrow:before,
@@ -113,19 +180,35 @@ nav.homeNav ul li a:hover {
   position: absolute;
   bottom: -1px;
 	opacity: 0;
+	-webkit-animation-name: wing;
+	-moz-animation-name: wing;
 	animation-name: wing;
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
 	animation-duration: 1.5s;
+	-webkit-animation-delay: 0;
+	-moz-animation-delay: 0;
 	animation-delay: 0;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 }
 
 .exploreArrow:before {
   right: 5px;
+	-webkit-transform: rotate(-40deg);
+	-moz-transform: rotate(-40deg);
+	-ms-transform: rotate(-40deg);
+	-o-transform: rotate(-40deg);
 	transform: rotate(-40deg);
 }
 
 .exploreArrow:after {
   left: 5px;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	-ms-transform: rotate(40deg);
+	-o-transform: rotate(40deg);
 	transform: rotate(40deg);
 }
 
@@ -143,8 +226,9 @@ nav.homeNav ul li a:hover {
 }
 
 #port {
-	background: pink;
-	z-index: 9;
+	background: linear-gradient(210deg,rgba(197,144,78,.3),rgba(136,61,1,.4)),
+              linear-gradient(120deg,rgba(197,144,78,.2),rgba(136,61,1,.5)),
+              linear-gradient(rgb(197,144,78),rgb(104,57,1));
 }
 
 .wrapWho {
@@ -164,112 +248,8 @@ nav.homeNav ul li a:hover {
   padding-right: 10%;
 }
 
-.wrapAbout .rivetsTop {
-  margin-top: 3px;
-}
-
-.wrapAbout .rivetsBottom {
-  margin-bottom: 3px;
-}
-
-.wrapAbout .sign {
-  padding: 30px 5px;
-}
-
-/* .wrapAbout .innerSign {
-  padding: 20px 0;
-} */
-
-.rivetsTop {
-  top: 2%;
-}
-
-.rivetsTopFull {
-  top: 4%;
-}
-
-.rivetsBottom {
-  bottom: 2%;
-}
-
-.rivetsBottomFull {
-  bottom: 4%;
-}
-
-.rivetsTopFull,
-.rivetsBottomFull,
-.rivetsTop,
-.rivetsBottom {
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.rivetsRightFull,
-.rivetsLeftFull,
-.rivetsRight,
-.rivetsLeft {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.rivetsRight,
-.rivetsLeft {
-  top: 30px;
-  bottom: 30px;
-}
-
-.rivetsRightFull,
-.rivetsLeftFull {
-  top: 4%;
-  bottom: 4%;
-}
-
-.rivetsRight {
-  right: 1%;
-}
-
-.rivetsRightFull {
-  right: 4%;
-}
-
-.rivetsLeft {
-  left: 1%;
-}
-
-.rivetsLeftFull {
-  left: 4%;
-}
-
-.whoPlate .rivetsTop {
-  top: 5%;
-}
-
-.whoPlate .rivetsBottom {
-  bottom: 5%;
-}
-
-.whoPlate .rivetsLeft {
-  left: 3%;
-}
-
-.whoPlate .rivetsRight {
-  right: 3%;
-}
-
-.whoPlate .innerSign {
-  width: 80%;
-  height: 60%;
-}
-
-.whoPlate .innerLabel {
-  white-space: nowrap;
-  font-size: 50px;
-  text-transform: uppercase;
+.wrapAbout .signInvis {
+	height: auto !important;
 }
 
 .aboutMe {
@@ -279,79 +259,15 @@ nav.homeNav ul li a:hover {
   line-height: 1.6;
 }
 
-.rivetT,
-.rivetR,
-.rivetL {
-  background: linear-gradient(238deg,rgba(197,144,78,.5),rgba(136,61,1,.4)),
-              linear-gradient(-37deg,rgba(197,144,78,.3),rgba(136,61,1,.5)),
-              linear-gradient(rgb(197,144,78),rgb(104,57,1));
+.signbtn,
+.startBtn {
+	text-decoration: underline;
+	cursor: pointer;
 }
 
-.rivetB {
-  background: linear-gradient(238deg,rgba(184,134,81,.2),rgba(164,94,25,.4)),
-              linear-gradient(-37deg,rgba(184,134,81,.1),rgba(164,94,25,.5)),
-              linear-gradient(rgb(197,144,78),rgb(104,57,1));
-}
-
-.rivet {
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  box-shadow: 0px 0px 11px 0px rgb(88,48,1);
-}
-
-.signInvis {
-  width: 60%;
-  height: 50%;
-  margin-top: -6px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.whoPlate {
-  width: 350px;
-  height: 170px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.sign {
-  background: linear-gradient(210deg,rgba(197,144,78,.3),rgba(136,61,1,.4)),
-              linear-gradient(120deg,rgba(197,144,78,.2),rgba(136,61,1,.5)),
-              linear-gradient(rgb(197,144,78),rgb(104,57,1));
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: -5px 15px 23px -2px rgba(158,83,18,.6) inset,
-              5px 15px 23px -2px rgba(158,83,18,.6) inset,
-              5px -6px 23px -2px rgba(88,48,1,.7) inset,
-              -5px -6px 23px -2px rgba(88,48,1,.7) inset,
-              0px 0px 11px 0px rgb(88,48,1);
-  position: relative;
-  z-index: 9999;
-}
-
-.innerSign {
-  background: linear-gradient(rgba(203,152,99,.6),rgba(165,105,43,.3)), radial-gradient(rgb(203,152,99),rgb(165,105,43));
-  width: 93%;
-  height: 85%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 2px 23px -4px rgb(69,69,69);
-}
-
-.innerLabel {
-  font-family: Herma;
-  font-size: 8vw;
-  color: rgb(104,57,1);
-  text-shadow: 0px 1px 0px rgb(253,182,150);
+.signbtn:hover,
+.startBtn:hover {
+	text-decoration: line-through;
 }
 
 .cogSpread,
@@ -389,23 +305,23 @@ nav.homeNav ul li a:hover {
 .smGear,
 .wrap,
 .wrap2 {
-  /* border: 1px solid red; */
   position: relative;
-  /* -webkit-animation-name: spin;
-  -webkit-animation-duration: 10000ms;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear; */
 }
 
 .wrap {
-    /* -webkit-animation-name: spin; */
     margin-top: 100px;
     position: absolute;
 }
 
 .wrap2 {
     -webkit-animation-name: counterSpin;
-    transform: rotate(10deg);
+		-moz-animation-name: counterSpin;
+		animation-name: counterSpin;
+    -webkit-transform: rotate(10deg);
+		-moz-transform: rotate(10deg);
+		-ms-transform: rotate(10deg);
+		-o-transform: rotate(10deg);
+		transform: rotate(10deg);
 }
 
 .lgGear {
@@ -427,20 +343,16 @@ nav.homeNav ul li a:hover {
 }
 
 .midDeco {
-  background: red;
   width: 20%;
   height: 100%;
   position: relative;
-  z-index: -1;
 }
 
 .midDeco2 {
-  background: orange;
   width: 100%;
   height: 20%;
   position: absolute;
   top: 40%;
-  z-index: -1;
 }
 
 .midDeco2::before {
@@ -449,7 +361,9 @@ nav.homeNav ul li a:hover {
   background: rgb(0,0,0);
   width: 10px;
   height: 10px;
-  border-radius: 50px;
+  -webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
   left: 45%;
   top: 25%;
 }
@@ -460,15 +374,20 @@ nav.homeNav ul li a:hover {
   display: flex;
   justify-content: center;
   -webkit-animation-duration: 10000ms;
+	-moz-animation-duration: 10000ms;
+	animation-duration: 10000ms;
   -webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	animation-timing-function: linear;
 }
 
 .pegTop,
 .pegRight,
 .pegBottom,
 .pegLeft {
-  background: purple;
   width: 25px;
   height: 25px;
   position: relative;
@@ -498,7 +417,9 @@ nav.homeNav ul li a:hover {
   width: calc(100% - 40px);
   height: calc(100% - 40px);
   border: 20px solid blue;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
   position: absolute;
   top: 0;
   left: 0;
@@ -509,11 +430,16 @@ nav.homeNav ul li a:hover {
 /** TV SCREEN **/
 
 .tvScreen {
-  background: radial-gradient(rgba(252,252,252,.3), rgba(252,252,252,.7)), radial-gradient(rgb(252,252,252) 60%, rgb(99,99,99));
+  background: radial-gradient(rgba(252,252,252,.3),
+															rgba(252,252,252,.7)),
+							radial-gradient(rgb(252,252,252) 60%,
+															rgb(99,99,99));
   width: 80%;
   height: 80%;
   border: 3px solid rgb(40,20,9);
-  box-shadow: 0px 0px 22px 1px rgba(252,252,252,.3);
+  -webkit-box-shadow: 0px 0px 22px 1px rgba(252,252,252,.3);
+	-moz-box-shadow: 0px 0px 22px 1px rgba(252,252,252,.3);
+	box-shadow: 0px 0px 22px 1px rgba(252,252,252,.3);
   position: relative;
   display: flex;
   justify-content: center;
@@ -532,6 +458,11 @@ nav.homeNav ul li a:hover {
   font-family: digital;
   font-size: 23px;
   color: rgb(0,0,0);
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
 }
 
 .screenLine {
@@ -539,17 +470,40 @@ nav.homeNav ul li a:hover {
   width: 100%;
   height: 1px;
   position: absolute;
-  animation-name: example;
-  animation-duration: 2s;
-  animation-delay: .5s;
-  animation-iteration-count: infinite;
-  box-shadow: 0px 0px 18px 0px rgba(102,178,178,.7);
+  -webkit-animation-name: example;
+	-moz-animation-name: example;
+	animation-name: example;
+  -webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	animation-duration: 2s;
+  -webkit-animation-delay: .5s;
+	-moz-animation-delay: .5s;
+	animation-delay: .5s;
+  -webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(102,178,178,.7);
+	-moz-box-shadow: 0px 0px 18px 0px rgba(102,178,178,.7);
+	box-shadow: 0px 0px 18px 0px rgba(102,178,178,.7);
+}
+
+.portHeader {
+	width: calc(100% - 40px);
+	position: absolute;
+	top: 0;
+  margin: 20px 20px 0 20px;
+	display: flex;
+	align-items: center;
+}
+
+.portHeader a {
+	margin-left: 20px;
+	text-decoration: underline;
+	cursor: pointer;
+	font-family: digital;
 }
 
 .tvScreen h1 {
-  position: absolute;
-  top: 20px;
-  left: 20px;
   opacity: .7;
   margin: 0;
   font-family: digital !important;
@@ -559,15 +513,17 @@ nav.homeNav ul li a:hover {
   width: 75%;
   height: 75%;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 10px;
-  grid-row-gap: 15px;
+  -ms-grid-template-columns: 100%;
+	grid-template-columns: 100%;
+  -ms-grid-column-gap: 10px;
+	grid-column-gap: 10px;
+  -ms-grid-row-gap: 15px;
+	grid-row-gap: 15px;
+	opacity: .85;
 }
 
 .grid div {
-  background: url("/assets/img/web.jpg");
   position: relative;
-  z-index: 9;
 }
 
 .blankLeftTop {
@@ -581,7 +537,6 @@ nav.homeNav ul li a:hover {
 	left: -40px;
 	position: absolute;
 	top: 105px;
-	z-index: 1;
 }
 
 .telegraph.show {
@@ -589,72 +544,37 @@ nav.homeNav ul li a:hover {
 }
 
 .telegraph {
-	width: 50%;
-	border: 1px solid rgba(255,255,255,.5);
-	transform: perspective(51em) rotateX(39deg);
-	font-family: Metrophobic !important;
-  box-shadow: 0 0 11px 1px rgba(255,255,255,.4);
-	opacity: 1;
-	transition: 2s;
+	-webkit-text-stroke: 1px rgba(253,182,150,.5) !important;
+	text-stroke: 1px rgba(253,182,150,.5) !important;
 }
 
-.telegramHeader {
-	width: 100%;
-	text-align: center;
-  text-transform: uppercase;
+span.platform {
+	color: rgba(253,182,150,.2);
 }
 
-.teleLabel {
-	display: flex;
+.postL::after,
+.postR::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid rgb(253,182,150);
+    bottom: -3px;
 }
 
-.postL,
-.postR {
-	border-bottom: 1px solid rgb(255,255,255);
-	width: 40%;
-	margin: 0 20px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	font-size: 3vw;
-	font-family: Herma;
-}
-
-.postL {
-	justify-content: flex-end;
-}
-
-.postR {
-  justify-content: flex-start;
-}
-
-.teleLogo {
-	height: 60px;
-	top: 16px;
-	position: relative;
-  margin: 0 20px;
-}
-
-.telegramHeader h3 {
-	margin-bottom: 10px;
-	font-size: 2vw;
-}
-
-.telegramHeader h4 {
-	margin: 0;
-}
-
-.teleContent {
-	margin: 40px 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.contactRightBtm { /* Rotating Gear */
-	right: -95px;
+.contactRightBtm {
 	position: absolute;
-	bottom: -15px;
+	bottom: -25px;
+	right: -105px;
+}
+
+.teleContent a {
+	border-bottom: 1px solid transparent;
+	transition: ease 1s all;
+}
+
+.teleContent a:hover {
+	border-bottom: 1px solid rgba(253,182,150,.5);
+	transition: ease 1s all;
 }
 
 @keyframes example {
@@ -662,33 +582,23 @@ nav.homeNav ul li a:hover {
     100% {bottom:0px; top:100%;}
 }
 
-@keyframes spin {
-  from {
-    -webkit-transform: rotate(360deg);
-  }
-  to {
-    -webkit-transform: rotate(0deg);
-  }
-}
-
-@keyframes counterSpin {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
 @keyframes exploring {
 	0% {
 		top: -10px;
 		opacity: 0;
+		-webkit-transition: 1s;
+		-moz-transition: 1s;
+		-ms-transition: 1s;
+		-o-transition: 1s;
 		transition: 1s;
 	}
 	100% {
 		top: 45px;
 		opacity: 1;
+		-webkit-transition: 1s;
+		-moz-transition: 1s;
+		-ms-transition: 1s;
+		-o-transition: 1s;
 		transition: 1s;
 	}
 }
@@ -701,5 +611,67 @@ nav.homeNav ul li a:hover {
 	100% {
 		height: 15px;
 		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 1066px) {
+	.aboutMe {
+		font-size: 16px !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+/* start of large tablet styles */
+	.wrapAbout .signInvis {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+	.cog2C,
+	.cog2D {
+		display: none;
+		visibility: collapse;
+	}
+}
+
+@media screen and (max-width: 700px) {
+/* start of medium tablet styles */
+	.cogSpread2 {
+		display: none;
+		visibility: collapse;
+	}
+}
+
+@media screen and (max-width: 650px) {
+/* start of phone styles */
+	#RyanIndustries8 .rivetT:nth-child(2),
+	#RyanIndustries8 .rivetT:nth-child(4),
+	#RyanIndustries8 .rivetB:nth-child(2),
+	#RyanIndustries8 .rivetB:nth-child(4),
+	.wrapAbout .rivetT:nth-child(2),
+	.wrapAbout .rivetT:nth-child(4),
+	.wrapAbout .rivetB:nth-child(2),
+	.wrapAbout .rivetB:nth-child(4),
+	#port .rivetT:nth-child(2),
+	#port .rivetT:nth-child(4),
+	#port .rivetB:nth-child(2),
+	#port .rivetB:nth-child(4),
+	.cog2B {
+		display: none;
+		visibility: collapse;
+	}
+
+	#RyanIndustries8 .innerLabel{
+    font-size: 44px;
+	}
+}
+
+@media screen and (max-width: 479px) {
+/* start of medium tablet styles */
+	.wrapWho {
+		margin-left: auto !important;
+		justify-content: center;
 	}
 }
